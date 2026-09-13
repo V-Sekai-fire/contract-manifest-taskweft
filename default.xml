@@ -22,7 +22,7 @@
   <project name="weftspun-studio" path="1-transport/weftspun-studio" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-cineform-tui" path="1-transport/cineform-tui" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-shepherd" path="1-transport/shepherd" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-ex_mcp" path="1-transport/ex-mcp" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-ex-mcp" path="1-transport/ex-mcp" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-taskweft-acp" path="1-transport/taskweft-acp" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-usd-viewer" path="1-transport/usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
@@ -87,12 +87,12 @@
   <project name="unified-modal-embedder" path="3-interactor/unified-modal-embedder" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voxhammer-image-mesh-editing" path="3-interactor/voxhammer-image-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="VoxHammer" path="3-interactor/voxhammer-upstream" remote="v-sekai-fire" revision="cb049b4c4b0b9a76b44b996bb5ba31ef70b796bf" />
-  <project name="Wan2.1" path="3-interactor/wan-vace-upstream" remote="v-sekai-fire" revision="9737cba9c1c3c4d04b33fcad41c111989865d315" />
+  <project name="Wan2-1" path="3-interactor/wan-vace-upstream" remote="v-sekai-fire" revision="9737cba9c1c3c4d04b33fcad41c111989865d315" />
   <project name="Pixal3D" path="3-interactor/pixal3d-upstream" remote="v-sekai-fire" revision="cdbb2bbffbf4e6f298b5f2af3d1d76a8d823d2af" />
   <project name="MoGe" path="3-interactor/moge-upstream" remote="v-sekai-fire" revision="74fbce054ebed49800de42d0ad0e83495065719a" />
   <project name="lingbot-map" path="3-interactor/lingbot-map-upstream" remote="v-sekai-fire" revision="1740f18ead3cca8e0e07dd0ec6b7030d22f0894c" />
   <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="ddea6b8214fc85611b2304d093696d08291ed4b4" />
-  <project name="TRELLIS.2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="75fbf0183001ed9876c8dbb35de6b68552ee08bd" />
+  <project name="TRELLIS-2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="75fbf0183001ed9876c8dbb35de6b68552ee08bd" />
   <project name="llama-ggml-npu-vision" path="3-interactor/llama-ggml-npu-vision-upstream" remote="v-sekai-fire" revision="d75e441df25d7b783fda089755de8101ed1b9426" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
@@ -122,7 +122,7 @@
   <project name="weftspun-character-taxonomy" path="2-contract/weftspun-character-taxonomy" remote="v-sekai-fire" revision="main/main" />
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
-  <project name="hailo_model_zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
+  <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
   <project name="chibifire/anny-camera-lora" path="5-repository/anny-camera-lora" remote="huggingface" revision="main" />
   <project name="chibifire/omnigen2-base-df5dca8a" path="5-repository/omnigen2-base-df5dca8a" remote="huggingface" revision="main" />
