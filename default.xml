@@ -20,10 +20,10 @@
   <default sync-j="16" />
 
   <project name="weftspun-studio" path="1-transport/weftspun-studio" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-cineform-tui" path="1-transport/transport-cineform-tui" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-shepherd" path="1-transport/transport-shepherd" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-cineform-tui" path="1-transport/cineform-tui" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-shepherd" path="1-transport/shepherd" remote="v-sekai-fire" revision="main/main" />
   <project name="ex_mcp" path="1-transport/ex-mcp" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-taskweft-acp" path="1-transport/transport-taskweft-acp" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-taskweft-acp" path="1-transport/taskweft-acp" remote="v-sekai-fire" revision="main/main" />
   <project name="usd-viewer" path="1-transport/usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
@@ -38,9 +38,9 @@
   <project name="skin-tokens-ggml" path="3-interactor/skin-tokens-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
-  <project name="entities-godot" path="4-entities/entities-godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
+  <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
   <project name="turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
-  <project name="interactor-cineform" path="3-interactor/interactor-cineform" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="datasource-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
   <project name="datasource-flow-project" path="3-interactor/datasource-flow-project" remote="v-sekai-fire" revision="main/main" />
   <project name="idtx-flow-project" path="3-interactor/idtx-flow-project" remote="v-sekai-fire" revision="main/main" />
@@ -97,7 +97,7 @@
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
-  <project name="entities-assembly" path="4-entities/entities-assembly" remote="v-sekai-fire" revision="main/main" />
+  <project name="entities-assembly" path="4-entities/assembly" remote="v-sekai-fire" revision="main/main" />
   <project name="elixir-holographic-reduced-representation" path="4-entities/elixir-holographic-reduced-representation" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
   <project name="request-for-discussion" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
@@ -143,13 +143,13 @@
   <project name="datasource-foundationdb" path="6-datasource/foundationdb" remote="v-sekai-fire" revision="main/main" />
   <project name="datasource-store" path="6-datasource/store" remote="v-sekai-fire" revision="main/main">
     <linkfile src="fdb_vfs.c"
-              dest="7-service/service-bao-sqlite-fdb/thirdparty/store/fdb_vfs.c" />
+              dest="7-service/bao-sqlite-fdb/thirdparty/store/fdb_vfs.c" />
     <linkfile src="fdb_keys.h"
-              dest="7-service/service-bao-sqlite-fdb/thirdparty/store/fdb_keys.h" />
+              dest="7-service/bao-sqlite-fdb/thirdparty/store/fdb_keys.h" />
     <linkfile src="fdb_vfs.c"
-              dest="1-transport/transport-taskweft-acp/thirdparty/store/fdb_vfs.c" />
+              dest="1-transport/taskweft-acp/thirdparty/store/fdb_vfs.c" />
     <linkfile src="fdb_keys.h"
-              dest="1-transport/transport-taskweft-acp/thirdparty/store/fdb_keys.h" />
+              dest="1-transport/taskweft-acp/thirdparty/store/fdb_keys.h" />
   </project>
   <project name="chibifire/anny-render-corpus-train" path="6-datasource/anny-render-corpus-constructed" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/anny-render-corpus-generated-train" path="6-datasource/anny-render-corpus-generated" remote="huggingface-datasets" revision="main" />
@@ -157,23 +157,23 @@
   <project name="chibifire/starforged-std-3001-appendix-e" path="6-datasource/starforged-std-3001-appendix-e" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/anny-dress-on-stage-train" path="6-datasource/anny-dress-on-stage-train" remote="huggingface-datasets" revision="main" />
   <project name="weft-warp-burrito" path="7-service/weft-warp-burrito" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-cineform" path="7-service/service-cineform" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-livebook" path="7-service/service-livebook" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-godot-build" path="7-service/service-godot-build" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-bao-sqlite-fdb" path="7-service/service-bao-sqlite-fdb" remote="v-sekai-fire" revision="main/main" />
+  <project name="service-cineform" path="7-service/cineform" remote="v-sekai-fire" revision="main/main" />
+  <project name="service-livebook" path="7-service/livebook" remote="v-sekai-fire" revision="main/main" />
+  <project name="service-godot-build" path="7-service/godot-build" remote="v-sekai-fire" revision="main/main" />
+  <project name="service-bao-sqlite-fdb" path="7-service/bao-sqlite-fdb" remote="v-sekai-fire" revision="main/main" />
 
-  <project name="iceoryx2" path="7-service/service-cineform/thirdparty/iceoryx2"
+  <project name="iceoryx2" path="7-service/cineform/thirdparty/iceoryx2"
            remote="v-sekai-fire" revision="a1909f56e30c16b1492e829313389b9439811323" />
-  <project name="cineform-sdk" path="7-service/service-cineform/thirdparty/cineform-sdk"
+  <project name="cineform-sdk" path="7-service/cineform/thirdparty/cineform-sdk"
            remote="v-sekai-fire" revision="6b66f29b5079bfb708caa53ff4150616c11c5fa4" />
-  <project name="libwebm" path="7-service/service-cineform/thirdparty/libwebm"
+  <project name="libwebm" path="7-service/cineform/thirdparty/libwebm"
            remote="v-sekai-fire" revision="6184f4484a826724b5293837134ab9492261b941" />
-  <project name="FTXUI" path="7-service/service-cineform/thirdparty/ftxui"
+  <project name="FTXUI" path="7-service/cineform/thirdparty/ftxui"
            remote="ftxui" revision="182ef70cd4dc1109d06e66361a9da86445928578" />
 
-  <project name="godot-sandbox" path="4-entities/entities-godot/modules/sandbox"
+  <project name="godot-sandbox" path="4-entities/godot/modules/sandbox"
            remote="v-sekai-fire" revision="a675fe9d2184333729f194317fa7b2895dd439f8" />
-  <project name="libriscv" path="4-entities/entities-godot/modules/sandbox/thirdparty/libriscv"
+  <project name="libriscv" path="4-entities/godot/modules/sandbox/thirdparty/libriscv"
            remote="v-sekai-fire" revision="fdf8fd8b2e7283db4463323a00413f0bbb1d9d97" />
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
