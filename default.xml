@@ -39,7 +39,7 @@
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
-  <project name="entities-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
+  <project name="interactor-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="datasource-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
   <project name="datasource-flow-project" path="3-interactor/datasource-flow-project" remote="v-sekai-fire" revision="main/main" />
@@ -98,9 +98,9 @@
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
   <project name="entities-assembly" path="4-entities/assembly" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-elixir-holographic-reduced-representation" path="4-entities/elixir-holographic-reduced-representation" remote="v-sekai-fire" revision="main/main" />
+  <project name="entities-elixir-holographic-reduced-representation" path="4-entities/elixir-holographic-reduced-representation" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-request-for-discussion" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
+  <project name="contract-request-for-discussion" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
     <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/fourloops-plan.usda" />
@@ -123,19 +123,19 @@
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
   <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
-  <project name="interactor-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
   <project name="chibifire/anny-camera-lora" path="5-repository/anny-camera-lora" remote="huggingface" revision="main" />
   <project name="chibifire/omnigen2-base-df5dca8a" path="5-repository/omnigen2-base-df5dca8a" remote="huggingface" revision="main" />
   <project name="LocalAI-io/MotionBricks-G1-GGML" path="5-repository/motionbricks-g1-ggml" remote="huggingface" revision="cc2a47603dbc203a4f18f35dd06ed3611833f506" />
   <project name="anny-render-corpus" path="6-datasource/anny-render-corpus" remote="v-sekai-fire" revision="main/main" />
   <project name="anny-soma-corpus" path="6-datasource/anny-soma-corpus" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-versitygw-local" path="6-datasource/versitygw-local" remote="v-sekai-fire" revision="main/main" />
+  <project name="datasource-versitygw-local" path="6-datasource/versitygw-local" remote="v-sekai-fire" revision="main/main" />
   <project name="rf-detr-keypoint-data" path="6-datasource/rf-detr-keypoint-data" remote="v-sekai-fire" revision="main/main" />
   <project name="rf-detr-segmentation-data" path="6-datasource/rf-detr-segmentation-data" remote="v-sekai-fire" revision="main/main" />
   <project name="kenney-stage" path="6-datasource/kenney-stage" remote="v-sekai-fire" revision="main/main" />
   <project name="quaternius-stage" path="6-datasource/quaternius-stage" remote="v-sekai-fire" revision="main/main" />
   <project name="thebasemesh-stage" path="6-datasource/thebasemesh-stage" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-coco-ood-eval" path="6-datasource/coco-ood-eval" remote="v-sekai-fire" revision="main/main" />
+  <project name="datasource-coco-ood-eval" path="6-datasource/coco-ood-eval" remote="v-sekai-fire" revision="main/main" />
   <project name="CCTV" path="6-datasource/cctv" remote="v-sekai-fire" revision="main/main" />
   <project name="desync" path="6-datasource/desync" remote="v-sekai-fire" revision="main/main" />
   <project name="casync" path="6-datasource/casync" remote="v-sekai-fire" revision="main/main" />
@@ -173,7 +173,7 @@
 
   <project name="godot-sandbox" path="4-entities/godot/modules/sandbox"
            remote="v-sekai-fire" revision="a675fe9d2184333729f194317fa7b2895dd439f8" />
-  <project name="interactor-libriscv" path="4-entities/godot/modules/sandbox/thirdparty/libriscv"
+  <project name="entities-libriscv" path="4-entities/godot/modules/sandbox/thirdparty/libriscv"
            remote="v-sekai-fire" revision="fdf8fd8b2e7283db4463323a00413f0bbb1d9d97" />
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
