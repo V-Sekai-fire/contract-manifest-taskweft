@@ -3,6 +3,7 @@
 
   <remote name="sinew-mocap" fetch="https://github.com/sinew-mocap" />
   <remote name="v-sekai" fetch="https://github.com/v-sekai" />
+  <remote name="vast-ai-research" fetch="https://github.com/VAST-AI-Research" />
   <remote name="laurencelundblade" fetch="https://github.com/laurencelundblade" />
   <remote name="ftxui" fetch="https://github.com/ArthurSonzogni" />
   <remote name="thorvg" fetch="https://github.com/thorvg" />
@@ -51,6 +52,9 @@
   <project name="interactor-editscore" path="3-interactor/editscore" remote="v-sekai-fire" revision="main/main" />
   <project name="tropes-removal-model" path="3-interactor/tropes-removal-model" remote="v-sekai-fire" revision="main/main" />
   <project name="solve" path="3-interactor/sinew-solve" remote="v-sekai-fire" revision="main/main" />
+  <project name="Optimized-Tris-to-Quads-Converter" path="3-interactor/tris-to-quads" remote="v-sekai-fire" revision="main" />
+  <project name="SkinTokens" path="3-interactor/skintokens-upstream" remote="vast-ai-research" revision="main" />
+  <project name="TOOL_cloth_dynamics" path="3-interactor/cloth-dynamics" remote="v-sekai" revision="main" />
   <project name="cloth-fit" path="3-interactor/cloth-fit" remote="v-sekai-fire" revision="main/main" />
   <project name="mount-drift" path="3-interactor/sinew-mount-drift" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
