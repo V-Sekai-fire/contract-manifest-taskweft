@@ -35,9 +35,9 @@
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-kimodo-text-to-motion" path="3-interactor/kimodo-text-to-motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-skintokens-auto-rig" path="3-interactor/skintokens-auto-rig" remote="v-sekai-fire" revision="main/main" />
-  <project name="skin-tokens.cpp" path="3-interactor/skin-tokens-cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="skin-tokens-ggml" path="3-interactor/skin-tokens-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
-  <project name="motion-bricks.cpp" path="3-interactor/motion-bricks-cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-godot" path="4-entities/entities-godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
   <project name="turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
   <project name="interactor-cineform" path="3-interactor/interactor-cineform" remote="v-sekai-fire" revision="main/main" />
@@ -46,7 +46,7 @@
   <project name="idtx-flow-project" path="3-interactor/idtx-flow-project" remote="v-sekai-fire" revision="main/main" />
   <project name="idtx-flow" path="3-interactor/idtx-flow" remote="v-sekai-fire" revision="main/main" />
   <project name="cyclegan-style-transfer" path="3-interactor/cyclegan-style-transfer" remote="v-sekai-fire" revision="main/main" />
-  <project name="rf-detr-cpp" path="3-interactor/rf-detr-cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="rf-detr-ggml" path="3-interactor/rf-detr-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-pose-consensus" path="3-interactor/pose-consensus" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-omnigen2" path="3-interactor/omnigen2" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-editscore" path="3-interactor/editscore" remote="v-sekai-fire" revision="main/main" />
@@ -77,9 +77,9 @@
   <project name="trellis2-ex" path="3-interactor/trellis2-ex" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-trellis2-image-mesh-painting" path="3-interactor/trellis2-image-mesh-painting" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-trellis2-image-to-textured-mesh" path="3-interactor/trellis2-image-to-textured-mesh" remote="v-sekai-fire" revision="main/main" />
-  <project name="stable-diffusion.cpp" path="3-interactor/stable-diffusion.cpp" remote="v-sekai-fire" revision="main/main" />
-  <project name="pixal3d.cpp" path="3-interactor/pixal3d.cpp" remote="v-sekai-fire" revision="main/main" />
-  <project name="kimodo.cpp" path="3-interactor/kimodo.cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="stable-diffusion-ggml" path="3-interactor/stable-diffusion-ggml" remote="v-sekai-fire" revision="main/main" />
+  <project name="pixal3d-ggml" path="3-interactor/pixal3d-ggml" remote="v-sekai-fire" revision="main/main" />
+  <project name="kimodo-ggml" path="3-interactor/kimodo-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="thorvg" path="2-contract/thorvg" remote="thorvg"
            revision="d114cd9e3c32d7f77bc9b324ae5c71d7775cb7ae" />
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main/consolidated" />
@@ -180,10 +180,10 @@
   <project name="emsdk" path="7-service/emsdk"
            remote="emscripten-core" revision="5eb0bde7585670252e8ba05e9d361627bffd08b5" />
 
-  <project name="sd-ggml" path="3-interactor/stable-diffusion.cpp/ggml" remote="v-sekai-fire" revision="e20c3a14aa70ee84ca58499814206dd08d8026bc" />
-  <project name="sdcpp-webui" path="3-interactor/stable-diffusion.cpp/examples/server/frontend" remote="v-sekai-fire" revision="c4bce3d6b3f236614cca21014f076083b7270ba8" />
-  <project name="sd-libwebp" path="3-interactor/stable-diffusion.cpp/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
-  <project name="sd-libwebm" path="3-interactor/stable-diffusion.cpp/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
+  <project name="sd-ggml" path="3-interactor/stable-diffusion-ggml/ggml" remote="v-sekai-fire" revision="e20c3a14aa70ee84ca58499814206dd08d8026bc" />
+  <project name="sdcpp-webui" path="3-interactor/stable-diffusion-ggml/examples/server/frontend" remote="v-sekai-fire" revision="c4bce3d6b3f236614cca21014f076083b7270ba8" />
+  <project name="sd-libwebp" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
+  <project name="sd-libwebm" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
 
   <project name="weftspun-keypoint" path="2-contract/weftspun-keypoint" remote="v-sekai-fire" revision="main/main">
     <linkfile src="bootstrap.sh" dest="bootstrap.sh" />
