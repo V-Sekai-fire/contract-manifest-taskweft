@@ -11,6 +11,7 @@ python = ">=3.12"
 # ourselves in repository-usd-core-wheels and point pixi at the release asset.
 [pypi-dependencies]
 usd-core = ">=26.8, <27"
+markdown-it-py = ">=4.2.0, <5"
 
 # Pin python to 3.12 on linux-aarch64 because the hosted wheel is cp312;
 # other platforms can pick any python >= 3.12 that pypi ships a wheel for.
