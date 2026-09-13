@@ -51,6 +51,7 @@
   <project name="interactor-editscore" path="3-interactor/editscore" remote="v-sekai-fire" revision="main/main" />
   <project name="tropes-removal-model" path="3-interactor/tropes-removal-model" remote="v-sekai-fire" revision="main/main" />
   <project name="solve" path="3-interactor/sinew-solve" remote="v-sekai-fire" revision="main/main" />
+  <project name="cloth-fit" path="3-interactor/cloth-fit" remote="v-sekai-fire" revision="main/main" />
   <project name="mount-drift" path="3-interactor/sinew-mount-drift" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-motion" path="3-interactor/motion" remote="v-sekai-fire" revision="main/main" />
