@@ -68,7 +68,7 @@
   <project name="interactor-taskweft" path="3-interactor/taskweft" remote="v-sekai-fire" revision="main/from-taskweft" />
   <project name="interactor-taskweft-grafcet-static" path="3-interactor/taskweft-grafcet-static" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-function-block-diagram" path="3-interactor/taskweft-function-block-diagram-compiler" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-taskweft-fbd-teacher" path="3-interactor/taskweft-function-block-diagram-teacher" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-taskweft-function-block-diagram-teacher" path="3-interactor/taskweft-function-block-diagram-teacher" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-nmm-personas" path="3-interactor/taskweft-nmm-personas" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-godot-sandbox" path="3-interactor/taskweft-godot-sandbox" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-pixal3d-image-to-textured-mesh" path="3-interactor/pixal3d-image-to-textured-mesh" remote="v-sekai-fire" revision="main/main" />
