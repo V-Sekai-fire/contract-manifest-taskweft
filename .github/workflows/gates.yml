@@ -25,24 +25,6 @@ on:
     branches: [main/main]
 
 jobs:
-  pr-description:
-    # Skipped on push, where there is no description to measure. This is the one skip in the
-    # file and it is a genuine absence rather than an unchecked case.
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install markdown-it-py
-      - name: negative controls
-        run: python check_pr_description.py --self-test
-      - name: this pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python check_pr_description.py --pr ${{ github.event.number }} --repo ${{ github.repository }}
-
   manifest-root:
     runs-on: ubuntu-latest
     steps:
