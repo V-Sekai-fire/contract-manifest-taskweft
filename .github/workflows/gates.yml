@@ -18,9 +18,7 @@ name: gates
 
 on:
   pull_request:
-    # `edited` matters more than usual here: the description is the thing under test, and it
-    # is most often fixed by editing it rather than by pushing a commit.
-    types: [opened, edited, synchronize, reopened]
+  merge_group:
   push:
     branches: [main/main]
 
