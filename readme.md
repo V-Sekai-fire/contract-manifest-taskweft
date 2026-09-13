@@ -6,12 +6,3 @@ irm https://raw.githubusercontent.com/V-Sekai-fire/manifest-weftspun/main/main/b
 ```
 
 Run on a bare machine to get a synced, tooled workspace.
-
-```
-# POSIX Shell
-WEFTSPUN_GIT_LFS=1 sh bootstrap.sh
-# Windows Powershell
-$env:WEFTSPUN_GIT_LFS = '1'; ./bootstrap.ps1
-```
-
-The Hugging Face projects are git-lfs. Run at a cost of tens of gigabytes to pull them.
