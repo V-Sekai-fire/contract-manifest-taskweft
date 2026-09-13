@@ -196,6 +196,6 @@
   </project>
   <project name="weftspun-agreements" path="2-contract/weftspun-agreements" remote="v-sekai-fire" revision="f11d2e515c0aed579ca1a3731748955164d4f8dc" />
   <project name="libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="21e4582d1739107337a03460c81412981130373e" />
-  <project name="vast-market-snapshots" path="0-datasource/vast-market-snapshots" remote="v-sekai-fire" revision="84913a7d190083a9f4060437e8091d35b7c40fdc" />
+  <project name="vast-market-snapshots" path="6-datasource/vast-market-snapshots" remote="v-sekai-fire" revision="84913a7d190083a9f4060437e8091d35b7c40fdc" />
   <project name="mitsuba3" path="3-interactor/mitsuba3" remote="v-sekai-fire" revision="609be13f2c4aa2dcdba77d4aa4cac8368b09cfb1" />
 </manifest>
