@@ -23,7 +23,7 @@
   <project name="transport-cineform-tui" path="1-transport/cineform-tui" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-shepherd" path="1-transport/shepherd" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-ex-mcp" path="1-transport/ex-mcp" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-taskweft-acp" path="1-transport/taskweft-acp" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-taskweft-agent-communication-protocol" path="1-transport/taskweft-acp" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-usd-viewer" path="1-transport/usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
