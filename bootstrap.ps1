@@ -1,12 +1,12 @@
 # One step from a bare machine to a synced, tooled workspace, on Windows:
 #
-#   irm https://raw.githubusercontent.com/V-Sekai-fire/manifest-weftspun/main/main/bootstrap.ps1 | iex
+#   irm https://raw.githubusercontent.com/V-Sekai-fire/contract-manifest-weftspun/main/main/bootstrap.ps1 | iex
 #
 # Runs in the current directory, which becomes the repo client root.
 $ErrorActionPreference = 'Stop'
 
-$raw = $(if ($env:WEFTSPUN_RAW) { $env:WEFTSPUN_RAW } else { 'https://raw.githubusercontent.com/V-Sekai-fire/manifest-weftspun/main/main' })
-$manifest = $(if ($env:WEFTSPUN_MANIFEST) { $env:WEFTSPUN_MANIFEST } else { 'https://github.com/V-Sekai-fire/manifest-weftspun.git' })
+$raw = $(if ($env:WEFTSPUN_RAW) { $env:WEFTSPUN_RAW } else { 'https://raw.githubusercontent.com/V-Sekai-fire/contract-manifest-weftspun/main/main' })
+$manifest = $(if ($env:WEFTSPUN_MANIFEST) { $env:WEFTSPUN_MANIFEST } else { 'https://github.com/V-Sekai-fire/contract-manifest-weftspun.git' })
 $branch = $(if ($env:WEFTSPUN_BRANCH) { $env:WEFTSPUN_BRANCH } else { 'main/main' })
 $bin = $(if ($env:LOCAL_BIN) { $env:LOCAL_BIN } else { Join-Path $HOME '.local\bin' })
 
