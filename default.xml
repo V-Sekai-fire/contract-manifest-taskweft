@@ -41,8 +41,8 @@
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
   <project name="entities-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
-  <project name="datasource-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
-  <project name="datasource-flow-project" path="3-interactor/datasource-flow-project" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
+  <project name="interactor-flow-project" path="3-interactor/datasource-flow-project" remote="v-sekai-fire" revision="main/main" />
   <project name="idtx-flow-project" path="3-interactor/idtx-flow-project" remote="v-sekai-fire" revision="main/main" />
   <project name="idtx-flow" path="3-interactor/idtx-flow" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-cyclegan-style-transfer" path="3-interactor/cyclegan-style-transfer" remote="v-sekai-fire" revision="main/main" />
@@ -66,8 +66,8 @@
   <project name="interactor-multimodal-semantic-ids" path="3-interactor/multimodal-semantic-ids" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-nx-ggml" path="3-interactor/nx-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft" path="3-interactor/taskweft" remote="v-sekai-fire" revision="main/from-taskweft" />
-  <project name="contract-taskweft-grafcet-static" path="3-interactor/taskweft-grafcet-static" remote="v-sekai-fire" revision="main/main" />
-  <project name="contract-taskweft-function-block-diagram" path="3-interactor/taskweft-function-block-diagram-compiler" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-taskweft-grafcet-static" path="3-interactor/taskweft-grafcet-static" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-taskweft-function-block-diagram" path="3-interactor/taskweft-function-block-diagram-compiler" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-fbd-teacher" path="3-interactor/taskweft-function-block-diagram-teacher" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-nmm-personas" path="3-interactor/taskweft-nmm-personas" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-godot-sandbox" path="3-interactor/taskweft-godot-sandbox" remote="v-sekai-fire" revision="main/main" />
