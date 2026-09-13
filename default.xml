@@ -93,7 +93,7 @@
   <project name="lingbot-map" path="3-interactor/lingbot-map-upstream" remote="v-sekai-fire" revision="1740f18ead3cca8e0e07dd0ec6b7030d22f0894c" />
   <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="ddea6b8214fc85611b2304d093696d08291ed4b4" />
   <project name="TRELLIS.2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="75fbf0183001ed9876c8dbb35de6b68552ee08bd" />
-  <project name="llama-cpp-npu-vision" path="3-interactor/llama-cpp-npu-vision-upstream" remote="v-sekai-fire" revision="d75e441df25d7b783fda089755de8101ed1b9426" />
+  <project name="llama-ggml-npu-vision" path="3-interactor/llama-ggml-npu-vision-upstream" remote="v-sekai-fire" revision="d75e441df25d7b783fda089755de8101ed1b9426" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
