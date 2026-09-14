@@ -13,9 +13,11 @@
 # reads the manifest the way a machine does and reports the groups.
 #
 # WHAT COUNTS AS A DUPLICATE. Three shapes, one line-item per shape:
-#   1. Two <project> entries with the same `name`. A `repo` client rejects
-#      this at sync, so it is a hard error. A parallel part shipped by
-#      mistake.
+#   1. Two <project> entries with the same `(remote, name, revision)`
+#      triple. Two entries with the same repo name pointed at two
+#      different branches are the legitimate multi-side-checkout pattern
+#      (`entities-godot` at both `main/fabric-0.2.3` and `feat/module-*`
+#      side by side), so the revision is part of the key.
 #   2. Two <project> entries with the same `path`. Two things trying to
 #      mount at the same directory is the same class of failure the
 #      manifest-root gate checks against files, one level up.
@@ -108,7 +110,7 @@ defmodule ManifestDupes do
     sha_pinned = Enum.filter(projects, &sha_revision?/1)
 
     [
-      by_name: group(projects, fn p -> {p[:remote], p[:name]} end),
+      by_name: group(projects, fn p -> {p[:remote], p[:name], p[:revision]} end),
       by_path: group(projects, fn p -> p[:path] end),
       by_remote_rev: group(sha_pinned, fn p -> {p[:remote], p[:revision]} end)
     ]
@@ -178,6 +180,19 @@ defmodule ManifestDupes.SelfTest do
   </manifest>
   """
 
+  # Same name, same remote, but two different revisions is the legitimate
+  # multi-side-checkout pattern (entities-godot at main/fabric-0.2.3 next
+  # to entities-godot at feat/module-pixal3d). Not a duplicate.
+  @same_name_diff_rev """
+  <?xml version="1.0" encoding="UTF-8"?>
+  <manifest>
+    <remote name="one" fetch="https://example.com/one" />
+    <default remote="one" />
+    <project name="alpha" path="a1" revision="main" />
+    <project name="alpha" path="a2" revision="feat/branch" />
+  </manifest>
+  """
+
   @dup_path """
   <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
@@ -235,7 +250,8 @@ defmodule ManifestDupes.SelfTest do
       {"a duplicate path is rejected", @dup_path, :rejects},
       {"a duplicate SHA-pinned remote+revision is rejected", @dup_remote_rev, :rejects},
       {"same name on different remotes passes", @same_name_diff_remote, :passes},
-      {"two projects at branch revision `main` pass", @same_branch_no_dupe, :passes}
+      {"two projects at branch revision `main` pass", @same_branch_no_dupe, :passes},
+      {"same name/remote at different revisions passes", @same_name_diff_rev, :passes}
     ]
 
     Enum.reduce(cases, {0, 0}, fn {label, xml, expected}, {ok, bad} ->
