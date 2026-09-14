@@ -109,8 +109,12 @@ defmodule ManifestDupes do
   def groups(projects) do
     sha_pinned = Enum.filter(projects, &sha_revision?/1)
 
+    # The by_name shape is removed: multi-checkout of the same repo at the
+    # same revision but different paths is a legitimate manifest pattern
+    # (e.g. the unified ggml mounted both at 2-contract/ggml and inside
+    # 3-interactor/stable-diffusion-ggml/ggml). Truly identical entries
+    # still trip by_path.
     [
-      by_name: group(projects, fn p -> {p[:remote], p[:name], p[:revision]} end),
       by_path: group(projects, fn p -> p[:path] end),
       by_remote_rev: group(sha_pinned, fn p -> {p[:remote], p[:revision]} end)
     ]
@@ -246,7 +250,7 @@ defmodule ManifestDupes.SelfTest do
   def run do
     cases = [
       {"a clean manifest passes", @clean, :passes},
-      {"a duplicate name is rejected", @dup_name, :rejects},
+      {"same name+remote+revision at different paths passes", @dup_name, :passes},
       {"a duplicate path is rejected", @dup_path, :rejects},
       {"a duplicate SHA-pinned remote+revision is rejected", @dup_remote_rev, :rejects},
       {"same name on different remotes passes", @same_name_diff_remote, :passes},
