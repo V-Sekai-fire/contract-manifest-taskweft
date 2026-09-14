@@ -29,7 +29,6 @@
   <project name="transport-elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-hm08-partition" path="2-contract/hm08-partition" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main/main" />
-  <project name="multiplayer-fabric-manuals" path="2-contract/manuals-vsk" remote="v-sekai-fire" revision="main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
@@ -101,7 +100,6 @@
   <project name="lingbot-map" path="3-interactor/lingbot-map-upstream" remote="v-sekai-fire" revision="1740f18ead3cca8e0e07dd0ec6b7030d22f0894c" />
   <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="ddea6b8214fc85611b2304d093696d08291ed4b4" />
   <project name="TRELLIS-2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="75fbf0183001ed9876c8dbb35de6b68552ee08bd" />
-  <project name="llama-ggml-npu-vision" path="3-interactor/llama-ggml-npu-vision-upstream" remote="v-sekai-fire" revision="d75e441df25d7b783fda089755de8101ed1b9426" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
@@ -147,7 +145,6 @@
   <project name="datasource-coco-ood-eval" path="6-datasource/coco-ood-eval" remote="v-sekai-fire" revision="main/main" />
   <project name="CCTV" path="6-datasource/cctv" remote="v-sekai-fire" revision="main/main" />
   <project name="desync" path="6-datasource/desync" remote="v-sekai-fire" revision="main/main" />
-  <project name="casync" path="6-datasource/casync" remote="v-sekai-fire" revision="main/main" />
   <project name="SK_VRM1_Constraint_Twist_Sample" path="6-datasource/sk-vrm1-constraint-twist-sample" remote="v-sekai-fire" revision="main/main" />
   <project name="datasource-foundationdb" path="6-datasource/foundationdb" remote="v-sekai-fire" revision="main/main" />
   <project name="datasource-store" path="6-datasource/store" remote="v-sekai-fire" revision="main/main">
@@ -185,8 +182,6 @@
   <project name="emsdk" path="7-service/emsdk"
            remote="emscripten-core" revision="5eb0bde7585670252e8ba05e9d361627bffd08b5" />
 
-  <project name="sd-ggml" path="3-interactor/stable-diffusion-ggml/ggml" remote="v-sekai-fire" revision="e20c3a14aa70ee84ca58499814206dd08d8026bc" />
-  <project name="sdcpp-webui" path="3-interactor/stable-diffusion-ggml/examples/server/frontend" remote="v-sekai-fire" revision="c4bce3d6b3f236614cca21014f076083b7270ba8" />
   <project name="sd-libwebp" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
   <project name="sd-libwebm" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
 
@@ -201,6 +196,5 @@
   </project>
   <project name="weftspun-agreements" path="2-contract/weftspun-agreements" remote="v-sekai-fire" revision="f11d2e515c0aed579ca1a3731748955164d4f8dc" />
   <project name="interactor-libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="21e4582d1739107337a03460c81412981130373e" />
-  <project name="vast-market-snapshots" path="6-datasource/vast-market-snapshots" remote="v-sekai-fire" revision="84913a7d190083a9f4060437e8091d35b7c40fdc" />
   <project name="mitsuba3" path="3-interactor/mitsuba3" remote="v-sekai-fire" revision="609be13f2c4aa2dcdba77d4aa4cac8368b09cfb1" />
 </manifest>
