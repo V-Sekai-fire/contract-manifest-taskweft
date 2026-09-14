@@ -39,6 +39,13 @@
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main/fabric-0.2.3" />
+  <project name="entities-godot" path="4-entities/godot-cassie" remote="v-sekai-fire" revision="feat/module-cassie" />
+  <project name="entities-godot" path="4-entities/godot-language-model" remote="v-sekai-fire" revision="feat/module-language-model" />
+  <project name="entities-godot" path="4-entities/godot-rf-detr" remote="v-sekai-fire" revision="feat/module-rf-detr" />
+  <project name="entities-godot" path="4-entities/godot-motion-bricks" remote="v-sekai-fire" revision="feat/module-motion-bricks" />
+  <project name="entities-godot" path="4-entities/godot-image-diffusion" remote="v-sekai-fire" revision="feat/module-image-diffusion" />
+  <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit" />
+  <project name="entities-godot" path="4-entities/godot-witness" remote="v-sekai-fire" revision="feat/witness" />
   <project name="interactor-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
