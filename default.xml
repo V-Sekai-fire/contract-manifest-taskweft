@@ -129,6 +129,7 @@
   <project name="weftspun-character-taxonomy" path="2-contract/weftspun-character-taxonomy" remote="v-sekai-fire" revision="main/main" />
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
+  <project name="dot-vscode" path=".vscode" remote="v-sekai-fire" revision="main/main" />
   <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
   <project name="repository-usd-core-wheels" path="5-repository/usd-core-wheels" remote="v-sekai-fire" revision="main" />
