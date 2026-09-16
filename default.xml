@@ -106,6 +106,7 @@
   <project name="entities-assembly" path="4-entities/assembly" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-elixir-holographic-reduced-representation" path="4-entities/elixir-holographic-reduced-representation" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
+  <project name="entities-anny-creator" path="4-entities/anny-creator" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-request-for-discussion" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
