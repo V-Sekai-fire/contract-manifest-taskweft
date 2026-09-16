@@ -44,7 +44,7 @@
   <project name="entities-godot" path="4-entities/godot-rf-detr" remote="v-sekai-fire" revision="feat/module-rf-detr" />
   <project name="entities-godot" path="4-entities/godot-motion-bricks" remote="v-sekai-fire" revision="feat/module-motion-bricks" />
   <project name="entities-godot" path="4-entities/godot-image-diffusion" remote="v-sekai-fire" revision="feat/module-image-diffusion" />
-  <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit" />
+  <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit-avboit" />
   <project name="entities-godot" path="4-entities/godot-witness" remote="v-sekai-fire" revision="feat/witness" />
   <project name="entities-godot" path="4-entities/godot-rfd-2251-fire" remote="v-sekai-fire" revision="personal/rfd-2251-fire" />
   <project name="interactor-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
