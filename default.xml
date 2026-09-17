@@ -46,6 +46,7 @@
   <project name="entities-godot" path="4-entities/godot-image-diffusion" remote="v-sekai-fire" revision="feat/module-image-diffusion" />
   <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit-avboit" />
   <project name="entities-godot" path="4-entities/godot-witness" remote="v-sekai-fire" revision="feat/witness" />
+  <project name="entities-cassie-flow-project" path="4-entities/cassie-flow-project" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-rfd-2251-fire" remote="v-sekai-fire" revision="personal/rfd-2251-fire" />
   <project name="interactor-turboquant-godot" path="3-interactor/turboquant-godot" remote="v-sekai-fire" revision="main/turboquant" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
