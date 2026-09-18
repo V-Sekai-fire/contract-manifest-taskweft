@@ -32,7 +32,6 @@
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
-  <project name="interactor-clothing-designer-maskscore" path="3-interactor/marvelous-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-kimodo-text-to-motion" path="3-interactor/kimodo-text-to-motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-skintokens-auto-rig" path="3-interactor/skintokens-auto-rig" remote="v-sekai-fire" revision="main/main" />
   <project name="skin-tokens-ggml" path="3-interactor/skin-tokens-ggml" remote="v-sekai-fire" revision="main/main" />
