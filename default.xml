@@ -33,6 +33,9 @@
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-kimodo-text-to-motion" path="3-interactor/kimodo-text-to-motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-skintokens-auto-rig" path="3-interactor/skintokens-auto-rig" remote="v-sekai-fire" revision="main/main" />
   <project name="skin-tokens-ggml" path="3-interactor/skin-tokens-ggml" remote="v-sekai-fire" revision="main/main" />
