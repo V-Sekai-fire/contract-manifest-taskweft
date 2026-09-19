@@ -92,6 +92,22 @@ jobs:
       - name: the manifest holds data and nothing else
         run: python check_manifest_comments.py default.xml
 
+  manifest-xml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # Controls first, for the same reason as above.
+      - name: negative controls
+        run: python check_manifest_xml.py --self-test
+      # Reaches every remote named in the manifest, because the failure this catches is a
+      # revision that reads correctly and does not exist: repo fetches refs/heads/<rev>, so
+      # a tag pinned by its own name fails at sync rather than at review.
+      - name: the manifest parses and every revision resolves
+        run: python check_manifest_xml.py --manifest default.xml
+
   bootstrap:
     runs-on: ubuntu-latest
     steps:
