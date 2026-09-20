@@ -143,29 +143,17 @@ jobs:
       - name: the manifest carries one project per interface
         run: elixir check_manifest_dupes.exs --manifest default.xml
 
-  # Preflight for a desk, not for CI. check_sync_preflight.py reads the state of every
-  # checkout in a repo client, and CI has no client, so only the controls run here - the
-  # same gap manifest-root carries and for the same reason. The full run is
-  # `python check_sync_preflight.py <workspace>` before a sync.
+  # The one-step sync, and the preflight inside it. CI runs the controls: two
+  # correct trees pass, and each of the states that has stopped a sync here is
+  # rejected. The sync itself needs a repo client and does not run here, which
+  # is the same gap manifest-root carries; a silent skip would read as a pass.
   sync-preflight:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: erlef/setup-beam@v1
         with:
-          python-version: '3.12'
+          otp-version: '27'
+          elixir-version: '1.20'
       - name: negative controls
-        run: python check_sync_preflight.py --self-test
-
-  # The one-step sync. CI runs its controls: a fully pushed branch is parked, an
-  # unpushed one is refused, rebase residue stops the run. The sync itself needs a
-  # repo client and does not run here.
-  sync-onestep:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: negative controls
-        run: python sync.py --self-test
+        run: elixir sync.exs --self-test
