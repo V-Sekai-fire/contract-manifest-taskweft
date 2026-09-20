@@ -156,3 +156,16 @@ jobs:
           python-version: '3.12'
       - name: negative controls
         run: python check_sync_preflight.py --self-test
+
+  # The one-step sync. CI runs its controls: a fully pushed branch is parked, an
+  # unpushed one is refused, rebase residue stops the run. The sync itself needs a
+  # repo client and does not run here.
+  sync-onestep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: negative controls
+        run: python sync.py --self-test
