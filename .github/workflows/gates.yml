@@ -142,3 +142,17 @@ jobs:
         run: elixir check_manifest_dupes.exs --self-test
       - name: the manifest carries one project per interface
         run: elixir check_manifest_dupes.exs --manifest default.xml
+
+  # Preflight for a desk, not for CI. check_sync_preflight.py reads the state of every
+  # checkout in a repo client, and CI has no client, so only the controls run here - the
+  # same gap manifest-root carries and for the same reason. The full run is
+  # `python check_sync_preflight.py <workspace>` before a sync.
+  sync-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: negative controls
+        run: python check_sync_preflight.py --self-test
