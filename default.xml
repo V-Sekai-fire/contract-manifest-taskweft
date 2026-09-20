@@ -27,6 +27,7 @@
   <project name="transport-usd-viewer" path="1-transport/usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-central-launcher" path="1-transport/central-launcher" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-hm08-partition" path="2-contract/hm08-partition" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
