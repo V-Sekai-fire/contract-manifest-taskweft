@@ -195,13 +195,20 @@ def self_test():
         pre.git(origin, "tag", "v1")
         repo = os.path.join(tmp, "proj")
         pre.git(tmp, "clone", "-q", origin, repo)
+        # The clone gets its own identity: a runner has no global git user, so a
+        # commit made without one fails and the fixture silently becomes the
+        # opposite of what it is named.
+        pre.git(repo, "config", "user.email", "t@t")
+        pre.git(repo, "config", "user.name", "t")
         pre.git(repo, "checkout", "-q", "-b", "feat/x")
         pre.git(repo, "push", "-q", "-u", "origin", "feat/x")
         if not pushed:
             with open(os.path.join(repo, "g"), "w") as fh:
                 fh.write("y")
             pre.git(repo, "add", "g")
-            pre.git(repo, "commit", "-qm", "unpushed")
+            rc, _, err = pre.git(repo, "commit", "-qm", "unpushed")
+            if rc != 0:
+                raise RuntimeError("fixture could not commit: %s" % err[:200])
         return manifest, repo
 
     bad = 0
