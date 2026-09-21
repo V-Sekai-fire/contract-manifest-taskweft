@@ -332,6 +332,10 @@ defmodule Sync.Run do
     backup =
       if File.dir?(db) do
         dir = Path.join(System.tmp_dir!(), "beads-#{System.unique_integer([:positive])}")
+        # cp_r! needs the destination's parent to exist. It does not create it,
+        # and the failure reads as the source being missing rather than the
+        # target: "no such file or directory" naming the path being written.
+        File.mkdir_p!(dir)
         File.cp_r!(db, Path.join(dir, "embeddeddolt"))
         IO.puts("  #{before || "unknown"} open issue(s), database copied aside")
         dir
