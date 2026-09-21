@@ -81,7 +81,7 @@
   <project name="interactor-multimodal-semantic-ids" path="3-interactor/multimodal-semantic-ids" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-nx-ggml" path="3-interactor/nx-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft" path="3-interactor/taskweft" remote="v-sekai-fire" revision="main/from-taskweft" />
-  <project name="interactor-taskweft-grafcet-static" path="3-interactor/taskweft-grafcet-static" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-taskweft-fbd-static" path="3-interactor/taskweft-fbd-static" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-function-block-diagram" path="3-interactor/taskweft-function-block-diagram-compiler" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-function-block-diagram-teacher" path="3-interactor/taskweft-function-block-diagram-teacher" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-nmm-personas" path="3-interactor/taskweft-nmm-personas" remote="v-sekai-fire" revision="main/main" />
