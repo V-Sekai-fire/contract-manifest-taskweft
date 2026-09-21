@@ -1,12 +1,12 @@
-pixi version 0.80.0
-pixi source https://github.com/prefix-dev/pixi/releases/download/v0.80.0/
-pixi checksums https://github.com/prefix-dev/pixi/releases/download/v0.80.0/sha256.sum
-pixi platform win-64 pixi-x86_64-pc-windows-msvc.zip 7700e558c4abef7d9b12f6caffabef39aec50b86fb76ac86cafa24f7c6c49bf5 pixi.exe
-pixi platform win-arm64 pixi-aarch64-pc-windows-msvc.zip c191687f58532308cdf938c03ef1873992fb9040e4abc83e52eba42e96567269 pixi.exe
-pixi platform linux-64 pixi-x86_64-unknown-linux-musl.tar.gz 6775f5854579bf59a2a1ca8a7adb025f3386a6535d08757779cd358829d64a22 pixi
-pixi platform linux-aarch64 pixi-aarch64-unknown-linux-musl.tar.gz 98fceb7e66278af239941621f057f54b32099807c01ad29f608305b4b3a2da1f pixi
-pixi platform osx-arm64 pixi-aarch64-apple-darwin.tar.gz 988b5b9696b31345a71257f2d678c1be266763e3083d2e85fc484b5ef1dd96e0 pixi
-pixi platform osx-64 pixi-x86_64-apple-darwin.tar.gz 32bd088fe612009f75e164673ca74465d1c22ed3b7e4b0a1ef030ea4d4573184 pixi
+pixi version 0.81.0
+pixi source https://github.com/prefix-dev/pixi/releases/download/v0.81.0/
+pixi checksums https://github.com/prefix-dev/pixi/releases/download/v0.81.0/sha256.sum
+pixi platform win-64 pixi-x86_64-pc-windows-msvc.zip 1fc82219c96d539e6a856bd1bb2643ec9e1753f5b3af61b0c3158921aca89de3 pixi.exe
+pixi platform win-arm64 pixi-aarch64-pc-windows-msvc.zip 4981a25df1a26389712bc1c27992635cff629a635b083755d71938ebe92d5e89 pixi.exe
+pixi platform linux-64 pixi-x86_64-unknown-linux-musl.tar.gz 7aa3ec39aecceff9062fa2ed4d42cbaa0bdc25ddea727d048e061cf188d434f6 pixi
+pixi platform linux-aarch64 pixi-aarch64-unknown-linux-musl.tar.gz 9f8d2113fe9dc01788a65f5c2acec34fa56b1193461a5c3e9a775d6d2d621bcb pixi
+pixi platform osx-arm64 pixi-aarch64-apple-darwin.tar.gz f4e32ea91970d4e11739488817979a5f2c6ebbb9cedb0d6dea74b2b790b272dc pixi
+pixi platform osx-64 pixi-x86_64-apple-darwin.tar.gz 9859588ba57f390b5c77d56b2654fab37bc00e10952da25e3efd6e3434557e5a pixi
 repo version v2.65
 repo source https://raw.githubusercontent.com/GerritCodeReview/git-repo/v2.65/repo
 repo sha256 1211b57b57e4122a9c546295a59b37d24068f1164d0e87bef096d5323c413e4f
