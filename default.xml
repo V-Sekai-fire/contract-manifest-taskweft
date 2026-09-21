@@ -144,6 +144,8 @@
   <project name="dot-beads" path=".beads" remote="v-sekai-fire" revision="main/main" />
   <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
+  <project name="repository-riscv64-sysroot" path="5-repository/riscv64-sysroot" remote="v-sekai-fire" revision="main/main" />
+  <project name="repository-riscv64-mujoco" path="5-repository/riscv64-mujoco" remote="v-sekai-fire" revision="main/main" />
   <project name="repository-usd-core-wheels" path="5-repository/usd-core-wheels" remote="v-sekai-fire" revision="main" />
   <project name="chibifire/anny-camera-lora" path="5-repository/anny-camera-lora" remote="huggingface" revision="main" />
   <project name="chibifire/omnigen2-base-df5dca8a" path="5-repository/omnigen2-base-df5dca8a" remote="huggingface" revision="main" />
