@@ -33,7 +33,7 @@
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-pixel-stream" path="2-contract/pixel-stream" remote="v-sekai-fire" revision="main/main" />
-  <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="c18432787e6d545a1218c1926ccdcfaffd4c116b" />
+  <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
