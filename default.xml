@@ -47,6 +47,7 @@
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="refs/tags/v2026.09.19.1621-main-fabric-0.2.4" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
+  <project name="entities-godot-sandbox-module" path="4-entities/godot-sandbox-module" remote="v-sekai-fire" revision="head/serialisable-guest" />
   <project name="entities-godot" path="4-entities/godot-spatial-audio" remote="v-sekai-fire" revision="feat/spatial-audio-forwardport" />
   <project name="entities-godot" path="4-entities/godot-cassie" remote="v-sekai-fire" revision="feat/module-cassie" />
   <project name="entities-godot" path="4-entities/godot-language-model" remote="v-sekai-fire" revision="feat/module-language-model" />
