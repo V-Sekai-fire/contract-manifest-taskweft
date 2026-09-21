@@ -233,9 +233,34 @@ def self_test():
     sh = (HERE / "install.sh").read_text(encoding="utf-8")
     ps = (HERE / "install.ps1").read_text(encoding="utf-8")
     readme = (HERE / "readme.md").read_text(encoding="utf-8")
+    # The checksums to corrupt are read out of the pins rather than written
+    # here. A control keyed to a literal stops corrupting anything the moment
+    # the pin it names is bumped, and a control that mutates nothing tests
+    # nothing - which is what a pixi bump to 0.81.0 did to the two below.
+    def corrupt(text, prefix, col):
+        """Flip one hex digit of the checksum in column col of the first row
+        starting with prefix. The column is named rather than counted from the
+        end, because the two row shapes put the checksum in different places
+        and picking the wrong field corrupts a keyword instead - which fails
+        the check too, so the control would pass while testing nothing."""
+        out, done = [], False
+        for line in text.splitlines(keepends=True):
+            f = line.split()
+            if not done and f[:len(prefix)] == prefix:
+                sha = f[col]
+                assert len(sha) == 64 and all(c in "0123456789abcdef" for c in sha),                     f"column {col} of {prefix} is {sha!r}, not a checksum"
+                i = line.index(sha)
+                line = line[:i] + ("0" if sha[0] != "0" else "1") + line[i + 1:]
+                done = True
+            out.append(line)
+        assert done, f"no {prefix} row to corrupt; the control would test nothing"
+        return "".join(out)
+
     controls = [
-        ("a wrong pixi checksum is rejected", pins.replace("7700e558", "0000e558"), False),
-        ("a wrong repo launcher checksum is rejected", pins.replace("1211b57b", "0000b57b"), False),
+        ("a wrong pixi checksum is rejected",
+         corrupt(pins, ["pixi", "platform"], 4), False),
+        ("a wrong repo launcher checksum is rejected",
+         corrupt(pins, ["repo", "sha256"], 2), False),
         (
             "an installer arm with no row is rejected",
             "\n".join(l for l in pins.splitlines() if not l.startswith("pixi platform osx-64")),
