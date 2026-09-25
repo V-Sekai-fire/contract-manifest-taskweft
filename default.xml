@@ -36,6 +36,8 @@
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-dress-on" path="3-interactor/dress-on" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-meshing-pen" path="3-interactor/meshing-pen" remote="v-sekai-fire" revision="main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
