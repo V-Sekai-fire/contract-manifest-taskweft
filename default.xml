@@ -16,6 +16,7 @@
   <remote name="folbricht" fetch="https://github.com/folbricht" />
   <remote name="systemd" fetch="https://github.com/systemd" />
   <remote name="emscripten-core" fetch="https://github.com/emscripten-core" />
+  <remote name="fire" fetch="https://github.com/fire" />
 
   <default sync-j="16" />
 
@@ -28,6 +29,7 @@
   <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-central-launcher" path="1-transport/central-launcher" remote="v-sekai-fire" revision="main/main" />
+  <project name="transport-meshing-pen" path="1-transport/meshing-pen" remote="v-sekai-fire" revision="main" />
   <project name="contract-hm08-partition" path="2-contract/hm08-partition" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
@@ -37,7 +39,6 @@
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-dress-on" path="3-interactor/dress-on" remote="v-sekai-fire" revision="main" />
-  <project name="interactor-meshing-pen" path="3-interactor/meshing-pen" remote="v-sekai-fire" revision="main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
@@ -143,6 +144,7 @@
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-vscode" path=".vscode" remote="v-sekai-fire" revision="main/main" />
+  <project name="fire-s-extension-pack" path=".fire-s-extension-pack" remote="fire" revision="master" />
   <project name="dot-beads" path=".beads" remote="v-sekai-fire" revision="main/main" />
   <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
