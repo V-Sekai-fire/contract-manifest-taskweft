@@ -156,6 +156,7 @@
   <project name="LocalAI-io/MotionBricks-G1-GGML" path="5-repository/motionbricks-g1-ggml" remote="huggingface" revision="cc2a47603dbc203a4f18f35dd06ed3611833f506" />
   <project name="anny-render-corpus" path="6-datasource/anny-render-corpus" remote="v-sekai-fire" revision="main/main" />
   <project name="anny-soma-corpus" path="6-datasource/anny-soma-corpus" remote="v-sekai-fire" revision="main/main" />
+  <project name="datasource-cassie" path="6-datasource/cassie" remote="v-sekai" revision="ed6870db441ece00701979db67190972deeff59b" />
   <project name="datasource-versitygw-local" path="6-datasource/versitygw-local" remote="v-sekai-fire" revision="main/main" />
   <project name="rf-detr-keypoint-data" path="6-datasource/rf-detr-keypoint-data" remote="v-sekai-fire" revision="main/main" />
   <project name="rf-detr-segmentation-data" path="6-datasource/rf-detr-segmentation-data" remote="v-sekai-fire" revision="main/main" />
