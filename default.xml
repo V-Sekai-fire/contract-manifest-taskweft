@@ -187,6 +187,7 @@
   <project name="service-livebook" path="7-service/livebook" remote="v-sekai-fire" revision="main/main" />
   <project name="service-godot-build" path="7-service/godot-build" remote="v-sekai-fire" revision="main/main" />
   <project name="service-bao-sqlite-fdb" path="7-service/bao-sqlite-fdb" remote="v-sekai-fire" revision="main/main" />
+  <project name="service-openbao" path="7-service/openbao" remote="v-sekai-fire" revision="main" />
 
   <project name="iceoryx2" path="7-service/cineform/thirdparty/iceoryx2"
            remote="v-sekai-fire" revision="a1909f56e30c16b1492e829313389b9439811323" />
