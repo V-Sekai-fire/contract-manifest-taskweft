@@ -78,6 +78,7 @@
   <project name="TOOL_cloth_dynamics" path="3-interactor/cloth-dynamics" remote="v-sekai" revision="main" />
   <project name="cloth-fit" path="3-interactor/cloth-fit" remote="v-sekai-fire" revision="main/main" />
   <project name="mount-drift" path="3-interactor/sinew-mount-drift" remote="v-sekai-fire" revision="main/main" />
+  <project name="driver" path="3-interactor/sinew-driver" remote="sinew-mocap" revision="main" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-motion" path="3-interactor/motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-mujoco-mjx" path="3-interactor/mujoco-mjx" remote="v-sekai-fire" revision="main/main" />
