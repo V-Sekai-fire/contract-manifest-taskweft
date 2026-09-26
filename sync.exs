@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 #
-# One step: preflight every checkout, park what is safe to park, protect the
-# beads database, `repo sync`, verify.
+# One step: preflight every checkout, park what is safe to park, `repo sync`,
+# then verify.
 #
 # WHY THIS EXISTS. `repo sync` is not idempotent against a dirty client. It
 # walks every project in the manifest, and one of them in the wrong state stops
@@ -9,11 +9,10 @@
 # projects that did sync are now at a different revision from the ones that did
 # not, and the next run starts from that mixture.
 #
-# A correct sync here was five commands and the order mattered. Out of order it
-# fails silently in both directions: sync before the preflight and `repo`
-# starts a rebase it cannot finish, sync before the backup and the gitignored
-# beads Dolt database is re-cloned away with no message. Five commands that
-# must be run in one order is one command nobody had written.
+# A correct sync here was several commands and the order mattered. Out of order
+# it fails silently: sync before the preflight and `repo` starts a rebase it
+# cannot finish. Several commands that must run in one order is one command
+# nobody had written.
 #
 # THREE STATES STOP A SYNC, and the gate enumerates all three rather than the
 # one that stopped it most recently:
@@ -29,7 +28,7 @@
 #   A PLAIN GIT REPOSITORY AT A MANIFEST PATH. A project made with `git init`
 #   at a path the manifest places has no entry under `.repo/projects`, and
 #   `repo` reports `unsupported checkout state` rather than adopting it. This
-#   happened to `.beads` and to `2-contract/pixel-stream`.
+#   happened to `2-contract/pixel-stream`.
 #
 #   A MERGE OR REBASE ALREADY IN PROGRESS. The residue of a previous failure.
 #   It reads as the first state to anybody skimming, and it is not: no branch
@@ -43,14 +42,9 @@
 # checkouts stop the run too - both need a judgement this script does not have.
 # `--preflight` reports and touches nothing.
 #
-# THE BEADS DATABASE IS COPIED FIRST. `.beads/embeddeddolt` is gitignored, so
-# `repo sync` has re-cloned it away before. The copy is taken before the sync
-# and restored only when the directory is missing or empty afterwards, so a
-# sync that leaves it alone changes nothing.
-#
-# VERIFICATION IS PART OF THE RUN, not a thing to remember afterwards. The
-# issue count is read before and after and both are printed, because a restore
-# that silently produced an empty database would otherwise read as a success.
+# VERIFICATION IS PART OF THE RUN, not a thing to remember afterwards. After the
+# sync every project is re-checked and any still-blocking one is counted, so a
+# sync that left a checkout in a bad state does not read as a success.
 #
 # DETECTION FLOOR. None. The population is every <project> element in
 # `default.xml`, a fixed list, so it is enumerated rather than sampled. A
@@ -67,7 +61,6 @@ defmodule Sync do
   @moduledoc false
 
   @default_manifest Path.join([".repo", "manifests", "default.xml"])
-  @beads_db Path.join(".beads", "embeddeddolt")
 
   def default_manifest, do: @default_manifest
 
@@ -222,19 +215,6 @@ defmodule Sync do
     end
   end
 
-  # ---- beads --------------------------------------------------------------
-
-  def beads_db(root), do: Path.join(root, @beads_db)
-
-  def issue_count(root) do
-    case System.cmd("bd", ["list", "--status", "open", "--json"], cd: root, stderr_to_stdout: false) do
-      {out, 0} -> out |> :json.decode() |> length()
-      _ -> nil
-    end
-  rescue
-    _ -> nil
-  end
-
   # `repo` ships as an extensionless Python script on this desk, which is not
   # directly executable everywhere; fall back to running it under python.
   def repo_sync(root) do
@@ -325,57 +305,16 @@ defmodule Sync.Run do
         :ok
     end
 
-    IO.puts("\n== beads")
-    before = issue_count(root)
-    db = beads_db(root)
-
-    backup =
-      if File.dir?(db) do
-        dir = Path.join(System.tmp_dir!(), "beads-#{System.unique_integer([:positive])}")
-        # cp_r! needs the destination's parent to exist. It does not create it,
-        # and the failure reads as the source being missing rather than the
-        # target: "no such file or directory" naming the path being written.
-        File.mkdir_p!(dir)
-        File.cp_r!(db, Path.join(dir, "embeddeddolt"))
-        IO.puts("  #{before || "unknown"} open issue(s), database copied aside")
-        dir
-      else
-        IO.puts("  no database at #{Sync.beads_db("")}; nothing to protect")
-        nil
-      end
-
     IO.puts("\n== repo sync")
     code = repo_sync(root)
 
-    restored =
-      if backup && (not File.dir?(db) or File.ls!(db) == []) do
-        File.rm_rf!(db)
-        File.cp_r!(Path.join(backup, "embeddeddolt"), db)
-        true
-      else
-        false
-      end
-
-    if backup, do: File.rm_rf!(backup)
-
     IO.puts("\n== verify")
-    after_count = issue_count(root)
-
-    IO.puts(
-      "  beads: #{before} open before, #{after_count} after" <>
-        if(restored, do: ", restored from the copy", else: "")
-    )
-
     left = Enum.count(check(root, manifest), fn {_, v, _} -> v == :fail end)
     IO.puts("  #{length(rows)} project(s) enumerated, #{left} still blocking.")
 
     cond do
       code != 0 ->
-        IO.puts("\nrepo sync failed; the beads database is intact.")
-        System.halt(1)
-
-      before != nil and after_count != before ->
-        IO.puts("\nThe issue count changed across the sync. Read it before trusting the database.")
+        IO.puts("\nrepo sync failed.")
         System.halt(1)
 
       left > 0 ->
