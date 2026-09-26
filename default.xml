@@ -149,7 +149,6 @@
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-vscode" path=".vscode" remote="v-sekai-fire" revision="main/main" />
   <project name="fire-s-extension-pack" path=".fire-s-extension-pack" remote="fire" revision="master" />
-  <project name="dot-beads" path=".beads" remote="v-sekai-fire" revision="main/main" />
   <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
   <project name="repository-riscv64-sysroot" path="5-repository/riscv64-sysroot" remote="v-sekai-fire" revision="main/main" />
