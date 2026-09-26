@@ -128,14 +128,6 @@
   <project name="manuals-weftspun" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="AGENTS.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/fourloops-plan.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/rfd/1144-image-to-omnigen2/fourloops-plan.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/rfd/1145-stylized-to-omnigen2/fourloops-plan.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/rfd/1146-latent-to-pixal3d/fourloops-plan.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-etnf.usda" dest="2-contract/manuals-weftspun/fourloops-etnf.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-etnf.usda" dest="2-contract/manuals-weftspun/rfd/1144-image-to-omnigen2/fourloops-etnf.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-etnf.usda" dest="2-contract/manuals-weftspun/rfd/1145-stylized-to-omnigen2/fourloops-etnf.usda" />
-    <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-etnf.usda" dest="2-contract/manuals-weftspun/rfd/1146-latent-to-pixal3d/fourloops-etnf.usda" />
     <linkfile src="rfd/2171-atelier-workshop-shuttle-vocabulary/README.md" dest=".claude/skills/rfd-2171-atelier-workshop-shuttle-vocabulary.md" />
     <linkfile src="rfd/2172-tenseless-continuous-present-voice/README.md" dest=".claude/skills/rfd-2172-tenseless-continuous-present-voice.md" />
     <linkfile src="rfd/2177-flight-levels-taxonomy/README.md" dest=".claude/skills/rfd-2177-flight-levels-taxonomy.md" />
