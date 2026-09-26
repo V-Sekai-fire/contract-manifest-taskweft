@@ -126,7 +126,7 @@
   <project name="entities-anny-creator" path="4-entities/anny-creator" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-order-independent-transparency" path="4-entities/order-independent-transparency" remote="v-sekai-fire" revision="main/main" />
   <project name="manuals-weftspun" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
-    <linkfile src="CLAUDE.md" dest="CLAUDE.md" />
+    <linkfile src="CLAUDE.md" dest="AGENTS.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
     <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/fourloops-plan.usda" />
     <linkfile src="apparatus/1143-keypoints-to-anny/fourloops-plan.usda" dest="2-contract/manuals-weftspun/rfd/1144-image-to-omnigen2/fourloops-plan.usda" />
