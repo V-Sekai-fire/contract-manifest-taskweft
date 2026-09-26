@@ -7,6 +7,7 @@
   <remote name="laurencelundblade" fetch="https://github.com/laurencelundblade" />
   <remote name="ftxui" fetch="https://github.com/ArthurSonzogni" />
   <remote name="thorvg" fetch="https://github.com/thorvg" />
+  <remote name="zeux" fetch="https://github.com/zeux" />
   <remote name="huggingface" fetch="https://huggingface.co" />
   <remote name="huggingface-datasets" fetch="https://huggingface.co/datasets" />
   <remote name="SarahWeiii" fetch="https://github.com/SarahWeiii" />
@@ -105,6 +106,7 @@
   <project name="thorvg" path="2-contract/thorvg" remote="thorvg"
            revision="d114cd9e3c32d7f77bc9b324ae5c71d7775cb7ae" />
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main/consolidated" />
+  <project name="meshoptimizer" path="2-contract/meshoptimizer" remote="zeux" revision="9e1f07b159d3cb777f1c67ed31fc11fd117986f4" />
   <project name="interactor-ufbx-to-openusd" path="3-interactor/ufbx-to-openusd" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-unified-modal-embedder" path="3-interactor/unified-modal-embedder" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voxhammer-image-mesh-editing" path="3-interactor/voxhammer-image-mesh-editing" remote="v-sekai-fire" revision="main/main" />
