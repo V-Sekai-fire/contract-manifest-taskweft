@@ -34,19 +34,6 @@ clangxx = "==22.1.5"
 ninja = "*"
 cmake = ">=3.28"
 
-# Paths are relative to the manifest directory, which pixi resolves through the
-# client-root symlink to the real checkout. Both that checkout and the .repo copy
-# sit two levels below the client root, so ../../ reaches the workspace either way.
-[feature.web.activation]
-scripts = ["../../7-service/emsdk/emsdk_env.sh"]
-
-[feature.web.target.win-64.activation]
-scripts = ["../../7-service/emsdk/emsdk_env.bat"]
-
 [environments]
 gate = ["gate"]
 build = ["build"]
-web = ["build", "web"]
-
-[tasks]
-emsdk-install = "python ../../7-service/emsdk/emsdk.py install 6.0.9 && python ../../7-service/emsdk/emsdk.py activate 6.0.9"
