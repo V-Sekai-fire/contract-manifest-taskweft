@@ -110,7 +110,6 @@
   <project name="interactor-unified-modal-embedder" path="3-interactor/unified-modal-embedder" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voxhammer-image-mesh-editing" path="3-interactor/voxhammer-image-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="VoxHammer" path="3-interactor/voxhammer-upstream" remote="v-sekai-fire" revision="cb049b4c4b0b9a76b44b996bb5ba31ef70b796bf" />
-  <project name="Wan2-1" path="3-interactor/wan-vace-upstream" remote="v-sekai-fire" revision="9737cba9c1c3c4d04b33fcad41c111989865d315" />
   <project name="Pixal3D" path="3-interactor/pixal3d-upstream" remote="v-sekai-fire" revision="cdbb2bbffbf4e6f298b5f2af3d1d76a8d823d2af" />
   <project name="MoGe" path="3-interactor/moge-upstream" remote="v-sekai-fire" revision="74fbce054ebed49800de42d0ad0e83495065719a" />
   <project name="lingbot-map" path="3-interactor/lingbot-map-upstream" remote="v-sekai-fire" revision="1740f18ead3cca8e0e07dd0ec6b7030d22f0894c" />
@@ -141,7 +140,6 @@
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-vscode" path=".vscode" remote="v-sekai-fire" revision="main/main" />
   <project name="fire-s-extension-pack" path=".fire-s-extension-pack" remote="fire" revision="master" />
-  <project name="hailo-model-zoo" path="5-repository/hailo-model-zoo" remote="v-sekai-fire" revision="refs/tags/keypoint/v0.1.0-dev.1" />
   <project name="repository-witness-cpp" path="5-repository/witness-cpp" remote="v-sekai-fire" revision="main/main" />
   <project name="repository-riscv64-sysroot" path="5-repository/riscv64-sysroot" remote="v-sekai-fire" revision="main/main" />
   <project name="repository-usd-core-wheels" path="5-repository/usd-core-wheels" remote="v-sekai-fire" revision="main" />
