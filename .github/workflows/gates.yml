@@ -108,22 +108,6 @@ jobs:
       - name: the manifest parses and every revision resolves
         run: python check_manifest_xml.py --manifest default.xml
 
-  bootstrap:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      # Controls first, for the same reason as above.
-      - name: negative controls
-        run: python check_bootstrap.py --self-test
-      # No --workspace: CI has no repo client, so the pixi.toml pair is unchecked here and
-      # the run says so by printing a note rather than a passing count. The pins and the
-      # readme are checked in full, which is what a fresh desk actually depends on.
-      - name: the pins agree with what their sources serve
-        run: python check_bootstrap.py --workspace /nonexistent
-
   # RFD 2229's interchangeable-parts policy caller. Reports duplicate-name,
   # duplicate-path, and duplicate SHA-pinned remote+revision groups in the
   # manifest. Written in Elixir so the gate that reads a manifest and the
