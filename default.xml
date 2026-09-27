@@ -16,7 +16,6 @@
   <remote name="c2sp" fetch="https://github.com/C2SP" />
   <remote name="folbricht" fetch="https://github.com/folbricht" />
   <remote name="systemd" fetch="https://github.com/systemd" />
-  <remote name="emscripten-core" fetch="https://github.com/emscripten-core" />
   <remote name="fire" fetch="https://github.com/fire" />
 
   <default sync-j="16" />
@@ -180,7 +179,6 @@
   <project name="chibifire/anny-dress-on-stage-train" path="6-datasource/anny-dress-on-stage-train" remote="huggingface-datasets" revision="main" />
   <project name="service-weft-warp-burrito" path="7-service/weft-warp-burrito" remote="v-sekai-fire" revision="main/main" />
   <project name="service-cineform" path="7-service/cineform" remote="v-sekai-fire" revision="main/main" />
-  <project name="service-livebook" path="7-service/livebook" remote="v-sekai-fire" revision="main/main" />
   <project name="service-godot-build" path="7-service/godot-build" remote="v-sekai-fire" revision="main/main" />
   <project name="service-bao-sqlite-fdb" path="7-service/bao-sqlite-fdb" remote="v-sekai-fire" revision="main/main" />
   <project name="service-openbao" path="7-service/openbao" remote="v-sekai-fire" revision="main" />
@@ -196,8 +194,6 @@
 
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
-  <project name="emsdk" path="7-service/emsdk"
-           remote="emscripten-core" revision="5eb0bde7585670252e8ba05e9d361627bffd08b5" />
 
   <project name="sd-libwebp" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
   <project name="sd-libwebm" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
