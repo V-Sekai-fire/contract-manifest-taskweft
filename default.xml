@@ -196,7 +196,7 @@
   <project name="sd-libwebp" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
   <project name="sd-libwebm" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
 
-  <project name="weftspun-keypoint" path="2-contract/weftspun-keypoint" remote="v-sekai-fire" revision="main/main">
+  <project name="contract-bootstrap" path="2-contract/bootstrap" remote="v-sekai-fire" revision="main/main">
     <linkfile src="bootstrap.sh" dest="bootstrap.sh" />
     <linkfile src="bootstrap.ps1" dest="bootstrap.ps1" />
     <linkfile src="install.sh" dest="install.sh" />
