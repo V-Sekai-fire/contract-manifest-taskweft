@@ -83,6 +83,7 @@
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-motion" path="3-interactor/motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-mujoco-mjx" path="3-interactor/mujoco-mjx" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-mujoco-sandbox-demo" path="3-interactor/mujoco-sandbox-demo" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-anny" path="3-interactor/anny" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-soma-x" path="3-interactor/soma-x" remote="v-sekai-fire" revision="main/main" />
   <project name="bumblebee" path="3-interactor/bumblebee" remote="v-sekai-fire" revision="main/main" />
