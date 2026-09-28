@@ -38,8 +38,9 @@
 # the branch is the only copy of the work, so the distinction is kept rather
 # than dropped for convenience: a branch whose commits are all on its upstream
 # is detached and deleted, and a branch carrying anything the remote has not
-# seen stops the run with the branch named. Rebase residue and unmanaged
-# checkouts stop the run too - both need a judgement this script does not have.
+# seen stops the run with the branch named. An unmanaged checkout is renamed to
+# `<path>.aside`, which keeps its work, so repo sync can clone the path. Rebase
+# residue stops the run - it needs a judgement this script does not have.
 # `--preflight` reports and touches nothing.
 #
 # VERIFICATION IS PART OF THE RUN, not a thing to remember afterwards. After the
@@ -52,7 +53,7 @@
 # `repo sync` clones it, so it is not a failure, but a run that printed nothing
 # about it would be indistinguishable from one that checked it.
 #
-# CONTROLS. Two positive and six negative, plus a control that a project absent
+# CONTROLS. Two positive and seven negative, plus a control that a project absent
 # from disk is counted rather than skipped. `--self-test` runs them.
 #
 # Run:  elixir sync.exs [workspace] [--preflight] [--self-test]
@@ -128,7 +129,8 @@ defmodule Sync do
 
       File.dir?(Path.join(root, ".repo")) and
           not File.exists?(Path.join([root, ".repo", "projects", path <> ".git"])) ->
-        {:fail, "a plain git repository repo does not manage; move it aside and let repo sync clone it"}
+        {:fail,
+         "a plain git repository repo does not manage; move it aside and let repo sync clone it"}
 
       true ->
         residue =
@@ -215,6 +217,24 @@ defmodule Sync do
     end
   end
 
+  @doc "Rename an unmanaged checkout out of the manifest path, keeping it whole."
+  def move_aside(root, path) do
+    full = Path.join(root, path)
+
+    dest =
+      Stream.iterate(0, &(&1 + 1))
+      |> Stream.map(fn
+        0 -> full <> ".aside"
+        n -> full <> ".aside#{n}"
+      end)
+      |> Enum.find(&(not File.exists?(&1)))
+
+    case File.rename(full, dest) do
+      :ok -> {:ok, "moved aside to #{Path.relative_to(dest, root)}; repo sync clones the path"}
+      {:error, why} -> {:error, "move aside failed: #{why}"}
+    end
+  end
+
   # `repo` ships as an extensionless Python script on this desk, which is not
   # directly executable everywhere; fall back to running it under python.
   def repo_sync(root) do
@@ -265,13 +285,17 @@ defmodule Sync.Run do
           acc
 
         {path, :fail, detail}, {ok, bad} ->
-          if mode == :preflight or not String.contains?(detail, "on branch ") do
-            {ok, [{path, detail} | bad]}
-          else
-            case park(root, path, detail) do
-              {:ok, why} -> {[{path, why} | ok], bad}
-              {:error, why} -> {ok, [{path, why} | bad]}
+          result =
+            cond do
+              mode == :preflight -> {:error, detail}
+              String.contains?(detail, "on branch ") -> park(root, path, detail)
+              String.contains?(detail, "repo does not manage") -> move_aside(root, path)
+              true -> {:error, detail}
             end
+
+          case result do
+            {:ok, why} -> {[{path, why} | ok], bad}
+            {:error, why} -> {ok, [{path, why} | bad]}
           end
       end)
 
@@ -291,8 +315,7 @@ defmodule Sync.Run do
       blocked != [] ->
         IO.puts(
           "\nNothing was synced. Each line above needs a decision this script " <>
-            "does not have:\nunpushed work to push or discard, rebase residue to " <>
-            "abort, a checkout repo does not manage."
+            "does not have:\nunpushed work to push or discard, or rebase residue to abort."
         )
 
         System.halt(1)
@@ -362,6 +385,7 @@ defmodule Sync.SelfTest do
       {"a feature branch left checked out", &on_a_branch/2, :fail},
       {"a branch with unpushed commits is refused parking", &unpushed/2, :refused},
       {"a plain git repository at a manifest path", &unmanaged/2, :fail},
+      {"an unmanaged checkout is moved aside with its commits", &unmanaged/2, :aside},
       {"a rebase left in progress", &mid_rebase/2, :fail},
       {"a merge left in progress", &mid_merge/2, :fail},
       {"a manifest path that is not a checkout", &not_a_checkout/2, :fail},
@@ -381,7 +405,13 @@ defmodule Sync.SelfTest do
               {_, branch} = git(repo, ["symbolic-ref", "--short", "-q", "HEAD"])
               res == :error and branch == "feat/x"
             else
-              Enum.any?(check(tmp, manifest), fn {_, v, _} -> v == want end)
+              if want == :aside do
+                {res, _} = move_aside(tmp, "proj")
+                {code, _} = git(repo <> ".aside", ["rev-parse", "--verify", "-q", "v1"])
+                res == :ok and not File.exists?(repo) and code == 0
+              else
+                Enum.any?(check(tmp, manifest), fn {_, v, _} -> v == want end)
+              end
             end
 
           say(caught, "negative control: #{name}")
