@@ -58,6 +58,7 @@
   <project name="entities-godot" path="4-entities/godot-motion-bricks" remote="v-sekai-fire" revision="feat/module-motion-bricks" />
   <project name="entities-godot" path="4-entities/godot-image-diffusion" remote="v-sekai-fire" revision="feat/module-image-diffusion" />
   <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit-avboit" />
+  <project name="entities-godot" path="4-entities/godot-kusudama" remote="v-sekai-fire" revision="vsk-joint-limit-kusudama-4.8" />
   <project name="entities-godot" path="4-entities/godot-witness" remote="v-sekai-fire" revision="feat/witness" />
   <project name="entities-cassie-flow-project" path="4-entities/cassie-flow-project" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-rfd-2251-fire" remote="v-sekai-fire" revision="personal/rfd-2251-fire" />
