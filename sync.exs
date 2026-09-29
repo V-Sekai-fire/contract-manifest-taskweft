@@ -53,7 +53,7 @@
 # `repo sync` clones it, so it is not a failure, but a run that printed nothing
 # about it would be indistinguishable from one that checked it.
 #
-# CONTROLS. Two positive and seven negative, plus a control that a project absent
+# CONTROLS. Two positive and eight negative, plus a control that a project absent
 # from disk is counted rather than skipped. `--self-test` runs them.
 #
 # Run:  elixir sync.exs [workspace] [--preflight] [--self-test]
@@ -128,7 +128,8 @@ defmodule Sync do
         {:fail, "a manifest path that is not a git checkout"}
 
       File.dir?(Path.join(root, ".repo")) and
-          not File.exists?(Path.join([root, ".repo", "projects", path <> ".git"])) ->
+          (not File.exists?(Path.join([root, ".repo", "projects", path <> ".git"])) or
+             match?({:ok, %{type: :directory}}, File.lstat(gitdir))) ->
         {:fail,
          "a plain git repository repo does not manage; move it aside and let repo sync clone it"}
 
@@ -385,6 +386,7 @@ defmodule Sync.SelfTest do
       {"a feature branch left checked out", &on_a_branch/2, :fail},
       {"a branch with unpushed commits is refused parking", &unpushed/2, :refused},
       {"a plain git repository at a manifest path", &unmanaged/2, :fail},
+      {"a plain clone beside a stub repo made for it", &plain_clone/2, :fail},
       {"an unmanaged checkout is moved aside with its commits", &unmanaged/2, :aside},
       {"a rebase left in progress", &mid_rebase/2, :fail},
       {"a merge left in progress", &mid_merge/2, :fail},
@@ -456,6 +458,10 @@ defmodule Sync.SelfTest do
     git(origin, ["tag", "v1"])
     repo = Path.join(tmp, "proj")
     git(tmp, ["clone", "-q", origin, repo])
+    projects = Path.join([tmp, ".repo", "projects", "proj.git"])
+    File.rm_rf!(projects)
+    File.rename!(Path.join(repo, ".git"), projects)
+    File.ln_s!(projects, Path.join(repo, ".git"))
     # The clone gets its own identity. A runner has no global git user, and a
     # commit made without one fails, which turns the unpushed fixture into the
     # fully-pushed one and makes its control certify the opposite of its name.
@@ -488,7 +494,15 @@ defmodule Sync.SelfTest do
     end
   end
 
-  defp unmanaged(tmp, _repo), do: File.rm_rf!(Path.join([tmp, ".repo", "projects", "proj.git"]))
+  defp unmanaged(tmp, repo) do
+    plain_clone(tmp, repo)
+    File.rm_rf!(Path.join([tmp, ".repo", "projects", "proj.git"]))
+  end
+
+  defp plain_clone(tmp, repo) do
+    File.rm!(Path.join(repo, ".git"))
+    File.cp_r!(Path.join([tmp, ".repo", "projects", "proj.git"]), Path.join(repo, ".git"))
+  end
 
   defp mid_rebase(_tmp, repo), do: File.mkdir_p!(Path.join([repo, ".git", "rebase-merge"]))
 
