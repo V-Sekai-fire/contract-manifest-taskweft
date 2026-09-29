@@ -49,6 +49,7 @@
   <project name="godot-robust-skin-weights-transfer" path="3-interactor/robust-skin-weights-transfer" remote="v-sekai-fire" revision="main" />
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="refs/tags/v2026.09.19.1621-main-fabric-0.2.4" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
@@ -82,7 +83,7 @@
   <project name="cloth-fit" path="3-interactor/cloth-fit" remote="v-sekai-fire" revision="main/main" />
   <project name="mount-drift" path="3-interactor/sinew-mount-drift" remote="v-sekai-fire" revision="main/main" />
   <project name="driver" path="3-interactor/sinew-driver" remote="sinew-mocap" revision="main" />
-  <project name="frame-eye-osc" path="3-interactor/frameeyeosc" remote="v-sekai-fire" revision="main/lean4-unified-expressions" />
+  <project name="frame-eye-osc" path="3-interactor/frame-eye-osc" remote="v-sekai-fire" revision="main/fire" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-motion" path="3-interactor/motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-mujoco-mjx" path="3-interactor/mujoco-mjx" remote="v-sekai-fire" revision="main/main" />
