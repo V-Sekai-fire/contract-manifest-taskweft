@@ -39,7 +39,6 @@
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main/main" />
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-dress-on" path="3-interactor/dress-on" remote="v-sekai-fire" revision="main" />
   <project name="interactor-drape" path="3-interactor/drape" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-curvenet" path="3-interactor/curvenet" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-garment-fit" path="3-interactor/garment-fit" remote="v-sekai-fire" revision="main/main" />
