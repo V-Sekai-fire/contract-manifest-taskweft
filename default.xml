@@ -51,21 +51,10 @@
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="master" />
-  <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="refs/tags/v2026.09.19.1621-main-fabric-0.2.4" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
-  <project name="entities-godot-sandbox-module" path="4-entities/godot-sandbox-module" remote="v-sekai-fire" revision="head/serialisable-guest" />
   <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main/llvm-clang23-build" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="master" />
   <project name="godot_openvr" path="4-entities/godot_openvr" remote="v-sekai-fire" revision="feat/frame-devices" />
-  <project name="entities-godot" path="4-entities/godot-spatial-audio" remote="v-sekai-fire" revision="feat/spatial-audio-forwardport" />
-  <project name="entities-godot" path="4-entities/godot-cassie" remote="v-sekai-fire" revision="feat/module-cassie" />
-  <project name="entities-godot" path="4-entities/godot-language-model" remote="v-sekai-fire" revision="feat/module-language-model" />
-  <project name="entities-godot" path="4-entities/godot-rf-detr" remote="v-sekai-fire" revision="feat/module-rf-detr" />
-  <project name="entities-godot" path="4-entities/godot-motion-bricks" remote="v-sekai-fire" revision="feat/module-motion-bricks" />
-  <project name="entities-godot" path="4-entities/godot-image-diffusion" remote="v-sekai-fire" revision="feat/module-image-diffusion" />
-  <project name="entities-godot" path="4-entities/godot-oit" remote="v-sekai-fire" revision="feat/oit-avboit" />
-  <project name="entities-godot" path="4-entities/godot-kusudama" remote="v-sekai-fire" revision="feat/limitations-4.8" />
-  <project name="entities-godot" path="4-entities/godot-witness" remote="v-sekai-fire" revision="feat/witness" />
   <project name="entities-cassie-flow-project" path="4-entities/cassie-flow-project" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-rfd-2251-fire" remote="v-sekai-fire" revision="personal/rfd-2251-fire" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
@@ -198,9 +187,6 @@
 
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
-
-  <project name="sd-libwebp" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebp" remote="v-sekai-fire" revision="0c9546f7efc61eac7f79ae115c3f99c91c21c443" />
-  <project name="sd-libwebm" path="3-interactor/stable-diffusion-ggml/thirdparty/libwebm" remote="v-sekai-fire" revision="5bf12267eea773a32fcf4949de52b0add158a8d5" />
 
   <project name="contract-bootstrap" path="2-contract/bootstrap" remote="v-sekai-fire" revision="main/main">
     <linkfile src="bootstrap.sh" dest="bootstrap.sh" />
