@@ -125,6 +125,7 @@
   <project name="sakuragaoka-station" path="3-interactor/sakuragaoka-station-upstream" remote="v-sekai-fire" revision="4112f57208b7e29998344ca71fef74202c2b2bdd" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-bake" path="3-interactor/bake" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-remesh" path="3-interactor/remesh" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
   <project name="entities-assembly" path="4-entities/assembly" remote="v-sekai-fire" revision="main/main" />
