@@ -172,10 +172,6 @@
               dest="7-service/bao-sqlite-fdb/thirdparty/store/fdb_vfs.c" />
     <linkfile src="fdb_keys.h"
               dest="7-service/bao-sqlite-fdb/thirdparty/store/fdb_keys.h" />
-    <linkfile src="fdb_vfs.c"
-              dest="1-transport/taskweft-acp/thirdparty/store/fdb_vfs.c" />
-    <linkfile src="fdb_keys.h"
-              dest="1-transport/taskweft-acp/thirdparty/store/fdb_keys.h" />
   </project>
   <project name="chibifire/anny-render-corpus-train" path="6-datasource/anny-render-corpus-constructed" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/anny-render-corpus-generated-train" path="6-datasource/anny-render-corpus-generated" remote="huggingface-datasets" revision="main" />
