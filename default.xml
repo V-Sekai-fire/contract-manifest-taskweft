@@ -56,6 +56,7 @@
   <project name="entities-godot-sandbox-module" path="4-entities/godot-sandbox-module" remote="v-sekai-fire" revision="head/serialisable-guest" />
   <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main/llvm-clang23-build" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="master" />
+  <project name="godot_openvr" path="4-entities/godot_openvr" remote="v-sekai-fire" revision="feat/frame-devices" />
   <project name="entities-godot" path="4-entities/godot-spatial-audio" remote="v-sekai-fire" revision="feat/spatial-audio-forwardport" />
   <project name="entities-godot" path="4-entities/godot-cassie" remote="v-sekai-fire" revision="feat/module-cassie" />
   <project name="entities-godot" path="4-entities/godot-language-model" remote="v-sekai-fire" revision="feat/module-language-model" />
