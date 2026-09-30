@@ -40,6 +40,16 @@
   <project name="QCBOR" path="2-contract/bus/libs/qcbor" remote="laurencelundblade" revision="refs/tags/v1.6.1" />
   <project name="interactor-dress-designer-maskscore" path="3-interactor/dress-designer-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-dress-on" path="3-interactor/dress-on" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-drape" path="3-interactor/drape" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-curvenet" path="3-interactor/curvenet" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-garment-fit" path="3-interactor/garment-fit" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-cage" path="3-interactor/cage" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-headfit" path="3-interactor/headfit" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-lasso" path="3-interactor/lasso" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-motion-guest" path="3-interactor/motion-guest" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-rfdetr-seg-guest" path="3-interactor/rfdetr-seg-guest" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-usd-guest" path="3-interactor/usd-guest" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-av1mkv" path="3-interactor/av1mkv" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
@@ -133,6 +143,12 @@
   <project name="contract-lean-deform-exact" path="2-contract/lean-deform-exact" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-tensor-copy-cost-model" path="2-contract/tensor-copy-cost-model" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-trellis2-mesh-vae-slang" path="2-contract/trellis2-mesh-vae-slang" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-guest-runtime" path="2-contract/guest-runtime" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-guest-common" path="2-contract/guest-common" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-ggml-rd" path="2-contract/ggml-rd" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-lbfgsb" path="2-contract/lbfgsb" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-anny-kernels" path="2-contract/anny-kernels" remote="v-sekai-fire" revision="main/main" />
+  <project name="contract-sinew-align" path="2-contract/sinew-align" remote="v-sekai-fire" revision="main/main" />
   <project name="weftspun-character-taxonomy" path="2-contract/weftspun-character-taxonomy" remote="v-sekai-fire" revision="main/main" />
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main/main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main/main" />
