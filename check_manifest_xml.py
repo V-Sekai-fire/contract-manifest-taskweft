@@ -23,6 +23,11 @@ A revision is accepted in three forms: a 40-character SHA, a `refs/tags/<tag>`, 
 name that exists as `refs/heads/<name>` on the remote. Anything else fails, including a
 `refs/heads/` that is gone and a `refs/tags/` that was never pushed.
 
+NO DEFAULT BRANCH. Every row names its own revision. A `<default>` or `<remote>` carrying a
+revision, a row without one, and `HEAD` all hand the choice of commit to whatever the remote
+calls its default branch, so each fails. Operator, 2026-09-30: "make sure all our manifests
+do not use a default branch. must specify".
+
 DETECTION FLOOR. None. Every `<project>` element is enumerated rather than sampled, because
 the population is fixed and small. A row whose remote cannot be reached is a FAIL and not a
 skip: a skip reads exactly like a pass.
@@ -76,17 +81,26 @@ def check(manifest, offline):
     fetches = remotes(root)
     default = root.find("default")
     default_remote = default.get("remote") if default is not None else None
-    default_rev = default.get("revision") if default is not None else None
 
     checked = failed = 0
+    for el in [default] + root.findall("remote"):
+        if el is not None and el.get("revision"):
+            print(f"FAIL <{el.tag}{' ' + el.get('name') if el.get('name') else ''}> carries revision "
+                  f"{el.get('revision')!r}: every project names its own")
+            failed += 1
     for p in root.findall("project"):
         name = p.get("name")
-        rev = p.get("revision", default_rev)
+        rev = p.get("revision")
         remote = p.get("remote", default_remote)
         checked += 1
 
         if not name or not rev or not remote:
-            print(f"FAIL {name or '<unnamed>'}: name, revision and remote are all required")
+            print(f"FAIL {name or '<unnamed>'}: name, revision and remote are all required, "
+                  "and the revision is the row's own")
+            failed += 1
+            continue
+        if rev in ("HEAD", "refs/heads/HEAD"):
+            print(f"FAIL {name}: revision {rev!r} follows the remote's default branch")
             failed += 1
             continue
         if SHA.match(rev):
@@ -119,13 +133,25 @@ def check(manifest, offline):
 
 SELF_TESTS = [
     ("well-formed manifest passes", '<manifest><remote name="r" fetch="https://example.invalid"/>'
-     '<default remote="r" revision="main"/><project name="p" revision="0" /></manifest>'
+     '<default remote="r"/><project name="p" revision="0" /></manifest>'
      .replace('revision="0"', 'revision="%s"' % ("a" * 40)), 0),
     ("malformed XML is rejected", "<manifest><project></manifest>", 1),
     ("a project with no revision is rejected",
      '<manifest><remote name="r" fetch="https://example.invalid"/><project name="p"/></manifest>', 1),
     ("an undeclared remote is rejected",
-     '<manifest><default revision="main"/><project name="p" remote="nope"/></manifest>', 1),
+     '<manifest><project name="p" remote="nope" revision="main"/></manifest>', 1),
+    ("a <default> revision is rejected",
+     '<manifest><remote name="r" fetch="https://example.invalid"/><default remote="r" revision="main"/>'
+     f'<project name="p" revision="{"c" * 40}"/></manifest>', 1),
+    ("a <remote> revision is rejected",
+     '<manifest><remote name="r" fetch="https://example.invalid" revision="main"/>'
+     f'<project name="p" remote="r" revision="{"d" * 40}"/></manifest>', 1),
+    ("a row leaning on <default> is rejected",
+     '<manifest><remote name="r" fetch="https://example.invalid"/><default remote="r" revision="main"/>'
+     '<project name="p"/></manifest>', 1),
+    ("revision HEAD is rejected",
+     '<manifest><remote name="r" fetch="https://example.invalid"/>'
+     '<project name="p" remote="r" revision="HEAD"/></manifest>', 1),
     ("a sha revision needs no network",
      '<manifest><remote name="r" fetch="https://example.invalid"/>'
      f'<project name="p" remote="r" revision="{"b" * 40}"/></manifest>', 0),
