@@ -23,8 +23,6 @@
   <project name="weftspun-studio" path="1-transport/weftspun-studio" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-cineform-tui" path="1-transport/cineform-tui" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-shepherd" path="1-transport/shepherd" remote="v-sekai-fire" revision="main/main" />
-  <project name="transport-usd-viewer" path="1-transport/usd-viewer" remote="v-sekai-fire" revision="main/main" />
-  <project name="weftspun-usd-viewer" path="1-transport/weftspun-usd-viewer" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-elixir-libgodot-connector" path="1-transport/elixir-libgodot-connector" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-central-launcher" path="1-transport/central-launcher" remote="v-sekai-fire" revision="main/main" />
   <project name="transport-meshing-pen" path="1-transport/meshing-pen" remote="v-sekai-fire" revision="feat/dress-on" />
@@ -84,7 +82,6 @@
   <project name="frame-eye-osc" path="3-interactor/frame-eye-osc" remote="v-sekai-fire" revision="main/fire" />
   <project name="frame-controller-sim" path="3-interactor/frame-controller-sim" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-motion" path="3-interactor/motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-mujoco-sandbox-demo" path="3-interactor/mujoco-sandbox-demo" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-anny" path="3-interactor/anny" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-soma-x" path="3-interactor/soma-x" remote="v-sekai-fire" revision="main/main" />
@@ -137,7 +134,6 @@
   <project name="plausible-witness-dag" path="2-contract/plausible-witness-dag" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-lean-deform-exact" path="2-contract/lean-deform-exact" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-tensor-copy-cost-model" path="2-contract/tensor-copy-cost-model" remote="v-sekai-fire" revision="main/main" />
-  <project name="contract-trellis2-mesh-vae-slang" path="2-contract/trellis2-mesh-vae-slang" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-guest-runtime" path="2-contract/guest-runtime" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-guest-common" path="2-contract/guest-common" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-ggml-rd" path="2-contract/ggml-rd" remote="v-sekai-fire" revision="main/main" />
