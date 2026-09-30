@@ -63,7 +63,6 @@
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="master" />
   <project name="godot_openvr" path="4-entities/godot_openvr" remote="v-sekai-fire" revision="feat/frame-devices" />
   <project name="entities-cassie-flow-project" path="4-entities/cassie-flow-project" remote="v-sekai-fire" revision="master" />
-  <project name="entities-godot" path="4-entities/godot-rfd-2251-fire" remote="v-sekai-fire" revision="personal/rfd-2251-fire" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-flow" path="3-interactor/datasource-flow" remote="v-sekai-fire" revision="main/fabric" />
   <project name="interactor-flow-project" path="3-interactor/datasource-flow-project" remote="v-sekai-fire" revision="main/main" />
@@ -106,8 +105,6 @@
   <project name="stable-diffusion-ggml" path="3-interactor/stable-diffusion-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="pixal3d-ggml" path="3-interactor/pixal3d-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="kimodo-ggml" path="3-interactor/kimodo-ggml" remote="v-sekai-fire" revision="main/main" />
-  <project name="thorvg" path="2-contract/thorvg" remote="thorvg"
-           revision="d114cd9e3c32d7f77bc9b324ae5c71d7775cb7ae" />
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main/consolidated" />
   <project name="meshoptimizer" path="2-contract/meshoptimizer" remote="zeux" revision="9e1f07b159d3cb777f1c67ed31fc11fd117986f4" />
   <project name="interactor-ufbx-to-openusd" path="3-interactor/ufbx-to-openusd" remote="v-sekai-fire" revision="main/main" />
