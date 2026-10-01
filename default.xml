@@ -121,6 +121,7 @@
   <project name="egit" path="4-entities/egit" remote="v-sekai-fire" revision="main" />
   <project name="entities-lean-shared" path="4-entities/lean-shared" remote="v-sekai-fire" revision="main" />
   <project name="entities-vsk-database-roundtable" path="4-entities/vsk-database-roundtable" remote="v-sekai-fire" revision="main" />
+  <project name="v-sekai-game" path="4-entities/v-sekai-game" remote="v-sekai-fire" revision="feat/rx" />
   <project name="manuals-weftspun" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="AGENTS.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
