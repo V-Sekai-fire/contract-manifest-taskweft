@@ -201,6 +201,7 @@
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
   <project name="service-burrito" path="7-service/burrito" remote="v-sekai-fire" revision="main" />
+  <project name="service-multiplayer-fabric-generate-secrets" path="7-service/multiplayer-fabric-generate-secrets" remote="v-sekai-fire" revision="main" />
 
   <project name="contract-bootstrap" path="2-contract/bootstrap" remote="v-sekai-fire" revision="main/main">
     <linkfile src="bootstrap.sh" dest="bootstrap.sh" />
