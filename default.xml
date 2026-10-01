@@ -46,6 +46,7 @@
   <project name="interactor-usd-guest" path="3-interactor/usd-guest" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-av1mkv" path="3-interactor/av1mkv" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voice" path="3-interactor/voice" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-fabric-zone" path="3-interactor/fabric-zone" remote="v-sekai-fire" revision="main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
@@ -122,7 +123,8 @@
   <project name="egit" path="4-entities/egit" remote="v-sekai-fire" revision="main" />
   <project name="entities-lean-shared" path="4-entities/lean-shared" remote="v-sekai-fire" revision="main" />
   <project name="entities-vsk-database-roundtable" path="4-entities/vsk-database-roundtable" remote="v-sekai-fire" revision="main" />
-  <project name="entities-multiplayer-fabric-rx" path="4-entities/multiplayer-fabric-rx" remote="v-sekai-fire" revision="feat/rx" />
+  <project name="entities-multiplayer-fabric-rx" path="4-entities/multiplayer-fabric-rx" remote="v-sekai-fire" revision="main" />
+  <project name="entities-zone-baker" path="4-entities/zone-baker" remote="v-sekai-fire" revision="main" />
   <project name="entities-sakuragaoka-station" path="4-entities/sakuragaoka-station" remote="v-sekai-fire" revision="main/main" />
   <project name="manuals-weftspun" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="AGENTS.md" />
