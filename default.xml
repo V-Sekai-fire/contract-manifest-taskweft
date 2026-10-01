@@ -56,6 +56,7 @@
   <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="master" />
+  <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="refs/tags/v2026.10.01.0014-main-fabric-0.2.4" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main/llvm-clang23-build" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="master" />
