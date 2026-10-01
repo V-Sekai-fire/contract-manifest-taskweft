@@ -127,7 +127,7 @@ jobs:
       - name: the manifest carries one project per interface
         run: elixir check_manifest_dupes.exs --manifest default.xml
 
-  # The one-step sync, and the preflight inside it. CI runs the controls: two
+  # The one-step sync, and the preflight inside it. CI runs the controls: three
   # correct trees pass, and each of the states that has stopped a sync here is
   # rejected. The sync itself needs a repo client and does not run here, which
   # is the same gap manifest-root carries; a silent skip would read as a pass.
