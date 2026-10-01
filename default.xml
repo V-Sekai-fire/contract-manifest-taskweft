@@ -50,10 +50,8 @@
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-kimodo-text-to-motion" path="3-interactor/kimodo-text-to-motion" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-skintokens-auto-rig" path="3-interactor/skintokens-auto-rig" remote="v-sekai-fire" revision="main/main" />
-  <project name="skin-tokens-ggml" path="3-interactor/skin-tokens-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="godot-robust-skin-weights-transfer" path="3-interactor/robust-skin-weights-transfer" remote="v-sekai-fire" revision="main" />
   <project name="CoACD" path="3-interactor/coacd-upstream" remote="SarahWeiii" revision="1401ce2a7ae1ed89c65ab958b48d489350c233c7" />
-  <project name="motion-bricks-ggml" path="3-interactor/motion-bricks-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="master" />
   <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="refs/tags/v2026.10.01.0014-main-fabric-0.2.4" />
@@ -87,7 +85,6 @@
   <project name="interactor-soma-x" path="3-interactor/soma-x" remote="v-sekai-fire" revision="main/main" />
   <project name="bumblebee" path="3-interactor/bumblebee" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-multimodal-semantic-ids" path="3-interactor/multimodal-semantic-ids" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-nx-ggml" path="3-interactor/nx-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft" path="3-interactor/taskweft" remote="v-sekai-fire" revision="main/from-taskweft" />
   <project name="interactor-taskweft-function-block-diagram" path="3-interactor/taskweft-function-block-diagram-compiler" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-taskweft-function-block-diagram-teacher" path="3-interactor/taskweft-function-block-diagram-teacher" remote="v-sekai-fire" revision="main/main" />
@@ -99,8 +96,6 @@
   <project name="interactor-trellis2-ex" path="3-interactor/trellis2-ex" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-trellis2-image-mesh-painting" path="3-interactor/trellis2-image-mesh-painting" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-trellis2-image-to-textured-mesh" path="3-interactor/trellis2-image-to-textured-mesh" remote="v-sekai-fire" revision="main/main" />
-  <project name="stable-diffusion-ggml" path="3-interactor/stable-diffusion-ggml" remote="v-sekai-fire" revision="main/main" />
-  <project name="pixal3d-ggml" path="3-interactor/pixal3d-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="kimodo-ggml" path="3-interactor/kimodo-ggml" remote="v-sekai-fire" revision="main/main" />
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main/consolidated" />
   <project name="meshoptimizer" path="2-contract/meshoptimizer" remote="zeux" revision="9e1f07b159d3cb777f1c67ed31fc11fd117986f4" />
