@@ -75,7 +75,6 @@
   <project name="solve" path="3-interactor/sinew-solve" remote="v-sekai-fire" revision="main/main" />
   <project name="Optimized-Tris-to-Quads-Converter" path="3-interactor/tris-to-quads" remote="v-sekai-fire" revision="main" />
   <project name="SkinTokens" path="3-interactor/skintokens-upstream" remote="vast-ai-research" revision="main" />
-  <project name="TOOL_cloth_dynamics" path="3-interactor/cloth-dynamics" remote="v-sekai" revision="main" />
   <project name="cloth-fit" path="3-interactor/cloth-fit" remote="v-sekai-fire" revision="main/main" />
   <project name="mount-drift" path="3-interactor/sinew-mount-drift" remote="v-sekai-fire" revision="main/main" />
   <project name="driver" path="3-interactor/sinew-driver" remote="sinew-mocap" revision="main" />
@@ -117,7 +116,6 @@
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-bake" path="3-interactor/bake" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-remesh" path="3-interactor/remesh" remote="v-sekai-fire" revision="main/main" />
-  <project name="godot-demo-projects" path="4-entities/godot-demo-projects" remote="v-sekai-fire" revision="master" />
   <project name="entities-assembly" path="4-entities/assembly" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-elixir-holographic-reduced-representation" path="4-entities/elixir-holographic-reduced-representation" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
