@@ -118,6 +118,9 @@
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-anny-creator" path="4-entities/anny-creator" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-order-independent-transparency" path="4-entities/order-independent-transparency" remote="v-sekai-fire" revision="main/main" />
+  <project name="egit" path="4-entities/egit" remote="v-sekai-fire" revision="main" />
+  <project name="entities-lean-shared" path="4-entities/lean-shared" remote="v-sekai-fire" revision="main" />
+  <project name="entities-vsk-database-roundtable" path="4-entities/vsk-database-roundtable" remote="v-sekai-fire" revision="main" />
   <project name="manuals-weftspun" path="2-contract/manuals-weftspun" remote="v-sekai-fire" revision="main/main">
     <linkfile src="CLAUDE.md" dest="AGENTS.md" />
     <linkfile src="CITATION.cff" dest="CITATION.cff" />
@@ -170,6 +173,8 @@
   <project name="chibifire/zenodo-second-hand-fashion-v3" path="6-datasource/zenodo-second-hand-fashion-v3" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/starforged-std-3001-appendix-e" path="6-datasource/starforged-std-3001-appendix-e" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/anny-dress-on-stage-train" path="6-datasource/anny-dress-on-stage-train" remote="huggingface-datasets" revision="main" />
+  <project name="datasource-duckdb" path="6-datasource/duckdb" remote="v-sekai-fire" revision="main" />
+  <project name="sqlite-jdbc" path="6-datasource/sqlite-jdbc" remote="v-sekai-fire" revision="master" />
   <project name="service-weft-warp-burrito" path="7-service/weft-warp-burrito" remote="v-sekai-fire" revision="main/main" />
   <project name="service-cineform" path="7-service/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="service-godot-build" path="7-service/godot-build" remote="v-sekai-fire" revision="main/main" />
@@ -187,6 +192,7 @@
 
   <project name="crossbuild-fedora" path="7-service/crossbuild-fedora"
            remote="v-sekai-fire" revision="1fc1fc8c376de4081ad5ea6bf127c4dfede8003a" />
+  <project name="service-burrito" path="7-service/burrito" remote="v-sekai-fire" revision="main" />
 
   <project name="contract-bootstrap" path="2-contract/bootstrap" remote="v-sekai-fire" revision="main/main">
     <linkfile src="bootstrap.sh" dest="bootstrap.sh" />
@@ -198,6 +204,14 @@
     <linkfile src="pixi.lock" dest="pixi.lock" />
   </project>
   <project name="weftspun-agreements" path="2-contract/weftspun-agreements" remote="v-sekai-fire" revision="f11d2e515c0aed579ca1a3731748955164d4f8dc" />
+  <project name="contract-lean-slang" path="2-contract/lean-slang" remote="v-sekai-fire" revision="main" />
+  <project name="plausible" path="2-contract/plausible" remote="v-sekai-fire" revision="main" />
+  <project name="lean-truth-research-zk" path="2-contract/truth-research-zk" remote="v-sekai-fire" revision="main" />
+  <project name="contract-zone-backend" path="2-contract/zone-backend" remote="v-sekai-fire" revision="main" />
   <project name="interactor-libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="21e4582d1739107337a03460c81412981130373e" />
   <project name="mitsuba3" path="3-interactor/mitsuba3" remote="v-sekai-fire" revision="609be13f2c4aa2dcdba77d4aa4cac8368b09cfb1" />
+  <project name="interactor-aria-storage" path="3-interactor/aria-storage" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-aria-lbfgspp" path="3-interactor/aria-lbfgspp" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-tool-godot-cage-deformer" path="3-interactor/tool-godot-cage-deformer" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-nx-ggml" path="3-interactor/nx-ggml" remote="v-sekai-fire" revision="main/main" />
 </manifest>
