@@ -46,6 +46,7 @@
   <project name="interactor-rfdetr-seg-guest" path="3-interactor/rfdetr-seg-guest" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-usd-guest" path="3-interactor/usd-guest" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-av1mkv" path="3-interactor/av1mkv" remote="v-sekai-fire" revision="main/main" />
+  <project name="interactor-slughorn" path="3-interactor/slughorn" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voice" path="3-interactor/voice" remote="v-sekai-fire" revision="main" />
   <project name="interactor-fabric-zone" path="3-interactor/fabric-zone" remote="v-sekai-fire" revision="main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
