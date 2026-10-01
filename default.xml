@@ -105,7 +105,6 @@
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main/consolidated" />
   <project name="meshoptimizer" path="2-contract/meshoptimizer" remote="zeux" revision="9e1f07b159d3cb777f1c67ed31fc11fd117986f4" />
   <project name="interactor-ufbx-to-openusd" path="3-interactor/ufbx-to-openusd" remote="v-sekai-fire" revision="main/main" />
-  <project name="interactor-unified-modal-embedder" path="3-interactor/unified-modal-embedder" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voxhammer-image-mesh-editing" path="3-interactor/voxhammer-image-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="VoxHammer" path="3-interactor/voxhammer-upstream" remote="v-sekai-fire" revision="cb049b4c4b0b9a76b44b996bb5ba31ef70b796bf" />
   <project name="Pixal3D" path="3-interactor/pixal3d-upstream" remote="v-sekai-fire" revision="cdbb2bbffbf4e6f298b5f2af3d1d76a8d823d2af" />
@@ -133,7 +132,6 @@
   </project>
   <project name="plausible-witness-dag" path="2-contract/plausible-witness-dag" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-lean-deform-exact" path="2-contract/lean-deform-exact" remote="v-sekai-fire" revision="main/main" />
-  <project name="contract-tensor-copy-cost-model" path="2-contract/tensor-copy-cost-model" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-guest-runtime" path="2-contract/guest-runtime" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-guest-common" path="2-contract/guest-common" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-ggml-rd" path="2-contract/ggml-rd" remote="v-sekai-fire" revision="main/main" />
