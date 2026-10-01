@@ -123,6 +123,7 @@
   <project name="entities-humanoid-rom" path="4-entities/humanoid-rom" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-anny-creator" path="4-entities/anny-creator" remote="v-sekai-fire" revision="main/main" />
   <project name="entities-order-independent-transparency" path="4-entities/order-independent-transparency" remote="v-sekai-fire" revision="main/main" />
+  <project name="entities-opentelemetry-godot-project" path="4-entities/opentelemetry-godot-project" remote="v-sekai-fire" revision="main" />
   <project name="egit" path="4-entities/egit" remote="v-sekai-fire" revision="main" />
   <project name="entities-lean-shared" path="4-entities/lean-shared" remote="v-sekai-fire" revision="main" />
   <project name="entities-vsk-database-roundtable" path="4-entities/vsk-database-roundtable" remote="v-sekai-fire" revision="main" />
