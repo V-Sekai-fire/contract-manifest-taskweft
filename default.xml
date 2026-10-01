@@ -108,6 +108,7 @@
   <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="ddea6b8214fc85611b2304d093696d08291ed4b4" />
   <project name="TRELLIS-2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="75fbf0183001ed9876c8dbb35de6b68552ee08bd" />
   <project name="sakuragaoka-station" path="3-interactor/sakuragaoka-station-upstream" remote="v-sekai-fire" revision="4112f57208b7e29998344ca71fef74202c2b2bdd" />
+  <project name="pyrowave" path="3-interactor/pyrowave-upstream" remote="v-sekai-fire" revision="89f7e47d4abbf650c91fae766728af866c5e32a0" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-bake" path="3-interactor/bake" remote="v-sekai-fire" revision="main/main" />
