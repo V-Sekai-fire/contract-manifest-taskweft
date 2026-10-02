@@ -3,6 +3,7 @@
 
   <remote name="sinew-mocap" fetch="https://github.com/sinew-mocap" />
   <remote name="v-sekai" fetch="https://github.com/v-sekai" />
+  <remote name="chibifire-stages" fetch="https://github.com/chibifire-stages" />
   <remote name="vast-ai-research" fetch="https://github.com/VAST-AI-Research" />
   <remote name="laurencelundblade" fetch="https://github.com/laurencelundblade" />
   <remote name="ftxui" fetch="https://github.com/ArthurSonzogni" />
@@ -63,6 +64,8 @@
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main/llvm-clang23-build" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="master" />
+  <project name="character-marocchino" path="4-entities/character-marocchino" remote="chibifire-stages" revision="main" />
+  <project name="character-mille-mire-feuille" path="4-entities/character-mille-mire-feuille" remote="chibifire-stages" revision="main" />
   <project name="godot_openvr" path="4-entities/godot_openvr" remote="v-sekai-fire" revision="feat/frame-devices" />
   <project name="entities-cassie-flow-project" path="4-entities/cassie-flow-project" remote="v-sekai-fire" revision="master" />
   <project name="interactor-cineform" path="3-interactor/cineform" remote="v-sekai-fire" revision="main/main" />
