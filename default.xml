@@ -183,7 +183,6 @@
   <project name="chibifire/starforged-std-3001-appendix-e" path="6-datasource/starforged-std-3001-appendix-e" remote="huggingface-datasets" revision="main" />
   <project name="chibifire/anny-dress-on-stage-train" path="6-datasource/anny-dress-on-stage-train" remote="huggingface-datasets" revision="main" />
   <project name="datasource-duckdb" path="6-datasource/duckdb" remote="v-sekai-fire" revision="main" />
-  <project name="sqlite-jdbc" path="6-datasource/sqlite-jdbc" remote="v-sekai-fire" revision="master" />
   <project name="service-weft-warp-burrito" path="7-service/weft-warp-burrito" remote="v-sekai-fire" revision="main/main" />
   <project name="service-cineform" path="7-service/cineform" remote="v-sekai-fire" revision="main/main" />
   <project name="service-godot-build" path="7-service/godot-build" remote="v-sekai-fire" revision="main/main" />
