@@ -120,6 +120,7 @@
   <project name="pyrowave" path="3-interactor/pyrowave-upstream" remote="v-sekai-fire" revision="89f7e47d4abbf650c91fae766728af866c5e32a0" />
   <project name="oxrsys" path="3-interactor/oxrsys" remote="v-sekai-fire" revision="main" />
   <project name="interactor-panelspun" path="3-interactor/panelspun" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-xr-pilot" path="3-interactor/xr-pilot" remote="v-sekai-fire" revision="main" />
   <project name="interactor-voxhammer-text-mesh-editing" path="3-interactor/voxhammer-text-mesh-editing" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-editscore-lora-qwen3vl-4b" path="3-interactor/editscore-lora-qwen3vl-4b" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-bake" path="3-interactor/bake" remote="v-sekai-fire" revision="main/main" />
