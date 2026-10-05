@@ -219,6 +219,7 @@
   <project name="contract-lean-slang" path="2-contract/lean-slang" remote="v-sekai-fire" revision="main" />
   <project name="plausible" path="2-contract/plausible" remote="v-sekai-fire" revision="main" />
   <project name="lean-truth-research-zk" path="2-contract/truth-research-zk" remote="v-sekai-fire" revision="main" />
+  <project name="trust-lean" path="2-contract/trust-lean" remote="v-sekai-fire" revision="main" />
   <project name="contract-zone-backend" path="2-contract/zone-backend" remote="v-sekai-fire" revision="main" />
   <project name="interactor-libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="21e4582d1739107337a03460c81412981130373e" />
   <project name="mitsuba3" path="3-interactor/mitsuba3" remote="v-sekai-fire" revision="609be13f2c4aa2dcdba77d4aa4cac8368b09cfb1" />
