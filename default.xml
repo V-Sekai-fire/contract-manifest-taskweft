@@ -87,6 +87,7 @@
   <project name="frame-controller-sim" path="3-interactor/frame-controller-sim" remote="v-sekai-fire" revision="main" />
   <project name="interactor-physics" path="3-interactor/physics" remote="v-sekai-fire" revision="main" />
   <project name="interactor-mujoco-sandbox-demo" path="3-interactor/mujoco-sandbox-demo" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-g1-sim-to-real" path="3-interactor/g1-sim-to-real" remote="v-sekai-fire" revision="main" />
   <project name="interactor-anny" path="3-interactor/anny" remote="v-sekai-fire" revision="main" />
   <project name="interactor-soma-x" path="3-interactor/soma-x" remote="v-sekai-fire" revision="main" />
   <project name="bumblebee" path="3-interactor/bumblebee" remote="v-sekai-fire" revision="main" />
