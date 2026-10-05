@@ -104,7 +104,6 @@
   <project name="interactor-trellis2-ex" path="3-interactor/trellis2-ex" remote="v-sekai-fire" revision="main" />
   <project name="interactor-trellis2-image-mesh-painting" path="3-interactor/trellis2-image-mesh-painting" remote="v-sekai-fire" revision="main" />
   <project name="interactor-trellis2-image-to-textured-mesh" path="3-interactor/trellis2-image-to-textured-mesh" remote="v-sekai-fire" revision="main" />
-  <project name="kimodo-ggml" path="3-interactor/kimodo-ggml" remote="v-sekai-fire" revision="main" />
   <project name="ggml" path="2-contract/ggml" remote="v-sekai-fire" revision="main" />
   <project name="meshoptimizer" path="2-contract/meshoptimizer" remote="zeux" revision="9e1f07b159d3cb777f1c67ed31fc11fd117986f4" />
   <project name="interactor-ufbx-to-openusd" path="3-interactor/ufbx-to-openusd" remote="v-sekai-fire" revision="main" />
