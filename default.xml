@@ -33,7 +33,6 @@
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
-  <project name="contract-keychain" path="2-contract/keychain" remote="v-sekai-fire" revision="main" />
   <project name="contract-pixel-stream" path="2-contract/pixel-stream" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-orbit-views" path="2-contract/orbit-views" remote="v-sekai-fire" revision="main/main" />
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main/main" />
@@ -52,7 +51,6 @@
   <project name="interactor-slughorn" path="3-interactor/slughorn" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-voice" path="3-interactor/voice" remote="v-sekai-fire" revision="main" />
   <project name="interactor-fabric-zone" path="3-interactor/fabric-zone" remote="v-sekai-fire" revision="main" />
-  <project name="interactor-multiplayer-fabric-zone-console" path="3-interactor/multiplayer-fabric-zone-console" remote="v-sekai-fire" revision="main" />
   <project name="interactor-material-graph-maskscore" path="3-interactor/material-graph-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-material-sampler-maskscore" path="3-interactor/material-sampler-maskscore" remote="v-sekai-fire" revision="main/main" />
   <project name="interactor-texture-painter-maskscore" path="3-interactor/texture-painter-maskscore" remote="v-sekai-fire" revision="main/main" />
