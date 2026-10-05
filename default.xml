@@ -33,7 +33,6 @@
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main/main" />
-  <project name="contract-keychain" path="2-contract/keychain" remote="v-sekai-fire" revision="main" />
   <project name="contract-pixel-stream" path="2-contract/pixel-stream" remote="v-sekai-fire" revision="main/main" />
   <project name="contract-orbit-views" path="2-contract/orbit-views" remote="v-sekai-fire" revision="main/main" />
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main/main" />
