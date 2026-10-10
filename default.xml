@@ -148,6 +148,7 @@
   <project name="contract-ggml-rd" path="2-contract/ggml-rd" remote="v-sekai-fire" revision="main" />
   <project name="contract-lbfgsb" path="2-contract/lbfgsb" remote="v-sekai-fire" revision="main" />
   <project name="contract-anny-kernels" path="2-contract/anny-kernels" remote="v-sekai-fire" revision="main" />
+  <project name="contract-bone-kernels" path="2-contract/bone-kernels" remote="v-sekai-fire" revision="main" />
   <project name="contract-sinew-align" path="2-contract/sinew-align" remote="v-sekai-fire" revision="main" />
   <project name="weftspun-character-taxonomy" path="2-contract/weftspun-character-taxonomy" remote="v-sekai-fire" revision="main" />
   <project name="awesome-v-sekai-fire" path="2-contract/awesome-v-sekai-fire" remote="v-sekai-fire" revision="main" />
