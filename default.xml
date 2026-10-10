@@ -42,6 +42,7 @@
   <project name="interactor-cage" path="3-interactor/cage" remote="v-sekai-fire" revision="main" />
   <project name="interactor-headfit" path="3-interactor/headfit" remote="v-sekai-fire" revision="main" />
   <project name="interactor-lasso" path="3-interactor/lasso" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-lean-guest" path="3-interactor/lean-guest" remote="v-sekai-fire" revision="main" />
   <project name="interactor-motion-guest" path="3-interactor/motion-guest" remote="v-sekai-fire" revision="main" />
   <project name="interactor-rfdetr-seg-guest" path="3-interactor/rfdetr-seg-guest" remote="v-sekai-fire" revision="main" />
   <project name="interactor-usd-guest" path="3-interactor/usd-guest" remote="v-sekai-fire" revision="main" />
