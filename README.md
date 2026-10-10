@@ -16,4 +16,4 @@ elixir .repo/manifests/sync.exs .
 
 ## Licence
 
-The scripts carry Apache-2.0 OR MIT SPDX headers; the repository has no LICENSE file.
+MIT. See [LICENSE](LICENSE).
