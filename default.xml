@@ -150,6 +150,7 @@
   <project name="contract-anny-kernels" path="2-contract/anny-kernels" remote="v-sekai-fire" revision="main" />
   <project name="contract-sinew-align" path="2-contract/sinew-align" remote="v-sekai-fire" revision="main" />
   <project name="weftspun-character-taxonomy" path="2-contract/weftspun-character-taxonomy" remote="v-sekai-fire" revision="main" />
+  <project name="awesome-v-sekai-fire" path="2-contract/awesome-v-sekai-fire" remote="v-sekai-fire" revision="main" />
   <project name=".github" path=".github" remote="v-sekai-fire" revision="main" />
   <project name="dot-claude" path=".claude" remote="v-sekai-fire" revision="main" />
   <project name="dot-vscode" path=".vscode" remote="v-sekai-fire" revision="main" />
