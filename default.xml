@@ -230,5 +230,6 @@
   <project name="interactor-aria-storage" path="3-interactor/aria-storage" remote="v-sekai-fire" revision="main" />
   <project name="interactor-aria-lbfgspp" path="3-interactor/aria-lbfgspp" remote="v-sekai-fire" revision="main" />
   <project name="interactor-tool-godot-cage-deformer" path="3-interactor/tool-godot-cage-deformer" remote="v-sekai-fire" revision="main" />
+  <project name="interactor-tool-photon-probe" path="3-interactor/tool-photon-probe" remote="v-sekai-fire" revision="main" />
   <project name="interactor-nx-ggml" path="3-interactor/nx-ggml" remote="v-sekai-fire" revision="main" />
 </manifest>
