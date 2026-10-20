@@ -31,6 +31,7 @@
   <project name="contract-hm08-partition" path="2-contract/hm08-partition" remote="v-sekai-fire" revision="main" />
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main" />
+  <project name="entities-godot-cineform" path="2-contract/cineform-movie-writer" remote="v-sekai-fire" revision="main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main" />
   <project name="contract-orbit-views" path="2-contract/orbit-views" remote="v-sekai-fire" revision="main" />
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main" />
