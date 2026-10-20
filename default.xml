@@ -113,7 +113,7 @@
   <project name="Pixal3D" path="3-interactor/pixal3d-upstream" remote="v-sekai-fire" revision="main" />
   <project name="MoGe" path="3-interactor/moge-upstream" remote="v-sekai-fire" revision="main" />
   <project name="lingbot-map" path="3-interactor/lingbot-map-upstream" remote="v-sekai-fire" revision="main" />
-  <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="ddea6b8214fc85611b2304d093696d08291ed4b4" />
+  <project name="udon2godot" path="3-interactor/udon2godot" remote="v-sekai-fire" revision="main" />
   <project name="TRELLIS-2" path="3-interactor/trellis2-upstream" remote="v-sekai-fire" revision="main" />
   <project name="sakuragaoka-station" path="3-interactor/sakuragaoka-station-upstream" remote="v-sekai-fire" revision="main" />
   <project name="pyrowave" path="3-interactor/pyrowave-upstream" remote="v-sekai-fire" revision="main" />
@@ -224,7 +224,7 @@
   <project name="lean-truth-research-zk" path="2-contract/truth-research-zk" remote="v-sekai-fire" revision="main" />
   <project name="trust-lean" path="2-contract/trust-lean" remote="v-sekai-fire" revision="main" />
   <project name="contract-zone-backend" path="2-contract/zone-backend" remote="v-sekai-fire" revision="main" />
-  <project name="interactor-libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="21e4582d1739107337a03460c81412981130373e" />
+  <project name="interactor-libeigen-eigen" path="3-interactor/trellis2-upstream/o-voxel/third_party/eigen" remote="v-sekai-fire" revision="release/o-voxel" />
   <project name="mitsuba3" path="3-interactor/mitsuba3" remote="v-sekai-fire" revision="main" />
   <project name="interactor-aria-storage" path="3-interactor/aria-storage" remote="v-sekai-fire" revision="main" />
   <project name="interactor-aria-lbfgspp" path="3-interactor/aria-lbfgspp" remote="v-sekai-fire" revision="main" />
