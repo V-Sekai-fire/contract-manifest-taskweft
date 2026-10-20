@@ -31,6 +31,7 @@
   <project name="contract-hm08-partition" path="2-contract/hm08-partition" remote="v-sekai-fire" revision="main" />
   <project name="contract-anny-keypoint-anchors" path="2-contract/anny-keypoint-anchors" remote="v-sekai-fire" revision="main" />
   <project name="contract-swing-twist-kusudama" path="2-contract/swing-twist-kusudama" remote="v-sekai-fire" revision="main" />
+  <project name="entities-godot-cineform" path="2-contract/cineform-movie-writer" remote="v-sekai-fire" revision="main" />
   <project name="contract-bus" path="2-contract/bus" remote="v-sekai-fire" revision="main" />
   <project name="contract-orbit-views" path="2-contract/orbit-views" remote="v-sekai-fire" revision="main" />
   <project name="glTF" path="2-contract/gltf-interactivity" remote="v-sekai-fire" revision="main" />
@@ -60,9 +61,9 @@
   <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="dev/multiplayer-fabric" />
-  <project name="godot-sandbox" path="4-entities/godot-sandbox" remote="v-sekai-fire" revision="dev/web-jspi" />
+  <project name="godot-sandbox" path="4-entities/godot-sandbox" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
-  <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main" />
+  <project name="entities-godot" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="dev/cineform" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="main" />
   <project name="entities-model-explorer" path="4-entities/model-explorer" remote="v-sekai-fire" revision="main" />
   <project name="character-marocchino" path="4-entities/character-marocchino" remote="chibifire-stages" revision="main" />
