@@ -60,9 +60,9 @@
   <project name="interactor-test-godot-vrm-motion-checker" path="3-interactor/test-godot-vrm-motion-checker" remote="v-sekai-fire" revision="godot47" />
   <project name="entities-godot" path="4-entities/godot" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot" path="4-entities/godot-fabric" remote="v-sekai-fire" revision="dev/multiplayer-fabric" />
-  <project name="godot-sandbox" path="4-entities/godot-sandbox" remote="v-sekai-fire" revision="dev/web-jspi" />
+  <project name="godot-sandbox" path="4-entities/godot-sandbox" remote="v-sekai-fire" revision="main" />
   <project name="entities-godot-sandbox-gdscript-compiler" path="4-entities/godot-sandbox-gdscript-compiler" remote="v-sekai-fire" revision="main" />
-  <project name="entities-godot-cineform" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="main" />
+  <project name="entities-godot" path="4-entities/godot-cineform" remote="v-sekai-fire" revision="dev/cineform" />
   <project name="godot-vrm" path="4-entities/godot-vrm" remote="v-sekai-fire" revision="main" />
   <project name="entities-model-explorer" path="4-entities/model-explorer" remote="v-sekai-fire" revision="main" />
   <project name="character-marocchino" path="4-entities/character-marocchino" remote="chibifire-stages" revision="main" />
